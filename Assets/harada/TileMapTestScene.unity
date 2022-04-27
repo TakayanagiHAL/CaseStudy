@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EffectPrefab: {fileID: 3735800206212212866, guid: 34efa7df7aeaa4b4dbc34d7646ef9677, type: 3}
   CreatePos: {x: 3, y: 4, z: 0}
+  Loop: 0
 --- !u!4 &311446756
 Transform:
   m_ObjectHideFlags: 0

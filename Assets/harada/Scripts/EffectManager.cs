@@ -7,11 +7,15 @@ public class EffectManager : MonoBehaviour
 {
     [SerializeField] GameObject EffectPrefab;
     [SerializeField] Vector3 CreatePos;
+    [SerializeField] bool Loop;
+
+    GameObject EffectObject;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -24,6 +28,12 @@ public class EffectManager : MonoBehaviour
         {
             CreateEffect();
         }
+
+        // エフェクトお試し消去
+        if (Keyboard.current.dKey.wasReleasedThisFrame)
+        {
+            DestroyEffect();
+        }
 #endif
 
 
@@ -33,7 +43,22 @@ public class EffectManager : MonoBehaviour
     void CreateEffect()
     {
         // インスタンス生成
-        Instantiate(EffectPrefab, CreatePos, Quaternion.identity);
+        EffectObject = Instantiate(EffectPrefab, CreatePos, Quaternion.identity);
+
+        // ループ設定がオフならばアニメーション終了でインスタンスを消去
+        if(!Loop)
+        {
+            // インスタンス消去
+            DestroyEffect();
+        }
+    }
+
+
+    // エフェクトの消去
+    void DestroyEffect()
+    {
+        // インスタンス消去
+        GameObject.Destroy(EffectObject, 1.0f);
     }
 
 }
