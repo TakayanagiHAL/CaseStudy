@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     {
         time = 0;
 
-        text.text = time.ToString();
+        text.text = time.ToString("f2");
     }
 
     // Update is called once per frame
@@ -22,6 +22,6 @@ public class Timer : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        text.text = time.ToString();
+        text.text = time.ToString("f2");
     }
 }
