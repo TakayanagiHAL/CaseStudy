@@ -88,6 +88,7 @@ public class player : MonoBehaviour
             if (power < Triger.ReadValue<float>())
             {
                 power = Triger.ReadValue<float>();
+                power = ((int)(power * 10 / 2)) * 0.2f;
                 Debug.Log(power);
             }
         }
