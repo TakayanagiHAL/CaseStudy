@@ -152,9 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1164354991f56c439e9c9edbfc29431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectPrefab: {fileID: 3735800206212212866, guid: 34efa7df7aeaa4b4dbc34d7646ef9677, type: 3}
-  CreatePos: {x: 3, y: 4, z: 0}
+  EffectPrefab: {fileID: 566863509344479083, guid: b4940b929f5b0ad459215acd6b04219c, type: 3}
+  CreatePosV: {x: 2, y: 1, z: 0}
+  CreatePosT: {fileID: 908226585}
   Loop: 0
+  Chase: 0
 --- !u!4 &311446756
 Transform:
   m_ObjectHideFlags: 0
@@ -935,6 +937,33 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &908226578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2917607536054288060, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
+  m_PrefabInstance: {fileID: 464698305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908226585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1254062453443749639, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
+  m_PrefabInstance: {fileID: 464698305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &908226586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908226578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1164354991f56c439e9c9edbfc29431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EffectPrefab: {fileID: 566863509344479083, guid: b4940b929f5b0ad459215acd6b04219c, type: 3}
+  CreatePosV: {x: 0, y: 0, z: 0}
+  CreatePosT: {fileID: 908226585}
+  Loop: 0
+  Chase: 1
 --- !u!1 &1279328813
 GameObject:
   m_ObjectHideFlags: 0
