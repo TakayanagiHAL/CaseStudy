@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class fugu : MonoBehaviour
 {
-    [SerializeField] GameObject swimFugu;
-    [SerializeField] GameObject bigFugu;
-    [SerializeField] GameObject smallFugu;
     [SerializeField] float delta;
     [SerializeField] bool isHorizon;
     [SerializeField] float moveSpeed;
 
-    public GameObject nowFugu;
-
     float startPos;
     float count;
+
+    Animator animator;
 
     bool isSmalling = false;
     // Start is called before the first frame update
@@ -28,18 +25,14 @@ public class fugu : MonoBehaviour
         {
             startPos = transform.position.y;
         }
+
+        animator = this.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         count += moveSpeed;
-        if (isSmalling)
-        {
-            Animator animator = nowFugu.GetComponent<Animator>();
-
-            //animator.
-        }
 
         if (isHorizon)
         {
@@ -56,15 +49,12 @@ public class fugu : MonoBehaviour
     {
         if (collision.gameObject.tag != "Player") return;
 
-        Destroy(nowFugu);
-        nowFugu = Instantiate(bigFugu, this.transform);
+        animator.SetBool("IsBig", true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag != "Player") return;
-        Destroy(nowFugu);
-        nowFugu = Instantiate(smallFugu, this.transform);
-        isSmalling = true;
+        animator.SetBool("IsBig", false);
     }
 }

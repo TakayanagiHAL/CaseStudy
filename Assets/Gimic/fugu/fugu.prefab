@@ -45,10 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790ab01bec3f1a040a8945bde2fc8912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swimFugu: {fileID: 5229962499232468107, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
-  bigFugu: {fileID: 4341360764860093527, guid: 665f50d3bb448f44fafcefda98d92922, type: 3}
-  smallFugu: {fileID: 5601755265343824709, guid: 52e80550b70b490428171d9c6f870321, type: 3}
-  nowFugu: {fileID: 993888940524547134}
+  delta: 0
+  isHorizon: 0
+  moveSpeed: 0
 --- !u!61 &7243820162665203487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82,6 +81,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1264000851026898359}
     m_Modifications:
+    - target: {fileID: 4180289923205123661, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
+      propertyPath: m_Size.y
+      value: 4.229098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180289923205123661, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1415543
+      objectReference: {fileID: 0}
     - target: {fileID: 5229962499232468104, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -132,11 +139,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
---- !u!1 &993888940524547134 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5229962499232468107, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
-  m_PrefabInstance: {fileID: 4998871991273005237}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &993888940524547133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5229962499232468104, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
