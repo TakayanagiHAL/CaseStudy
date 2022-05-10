@@ -101,7 +101,7 @@ public class player : MonoBehaviour
         Rigidbody2D.AddForce(force * power * impactPower, ForceMode2D.Impulse);
 
         // 泡のエフェクト再生
-        this.gameObject.GetComponent<EffectManager>().CreateEffect(transform.localEulerAngles.z);
+        this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
 
         Debug.Log("Inpact");
     }

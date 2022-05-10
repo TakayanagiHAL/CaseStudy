@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &311446754
+--- !u!1 &46245077
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,8 +131,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 311446756}
-  - component: {fileID: 311446755}
+  - component: {fileID: 46245079}
+  - component: {fileID: 46245078}
   m_Layer: 0
   m_Name: EffectManager
   m_TagString: Untagged
@@ -140,32 +140,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &311446755
+--- !u!114 &46245078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311446754}
+  m_GameObject: {fileID: 46245077}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1164354991f56c439e9c9edbfc29431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectPrefab: {fileID: 566863509344479083, guid: b4940b929f5b0ad459215acd6b04219c, type: 3}
-  CreatePosV: {x: 2, y: 1, z: 0}
-  CreatePosT: {fileID: 908226585}
-  Loop: 0
+  EffectPrefab: {fileID: 3735800206212212866, guid: 34efa7df7aeaa4b4dbc34d7646ef9677, type: 3}
+  CreatePosV: {x: 1, y: 1, z: 0}
+  CreatePosT: {fileID: 0}
+  Loop: 1
   Chase: 0
---- !u!4 &311446756
+--- !u!4 &46245079
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311446754}
+  m_GameObject: {fileID: 46245077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8958027, y: 0.3545521, z: -7.8557577}
+  m_LocalPosition: {x: 0.76480424, y: 0.5588422, z: -11.821046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -196,7 +196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1399807431816802888, guid: af9079a0ac78220469ebc832320d3e9f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1399807431816802888, guid: af9079a0ac78220469ebc832320d3e9f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -281,7 +281,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1254062453443749639, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1254062453443749639, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -937,33 +937,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &908226578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2917607536054288060, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
-  m_PrefabInstance: {fileID: 464698305}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &908226585 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1254062453443749639, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
-  m_PrefabInstance: {fileID: 464698305}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &908226586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908226578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1164354991f56c439e9c9edbfc29431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EffectPrefab: {fileID: 566863509344479083, guid: b4940b929f5b0ad459215acd6b04219c, type: 3}
-  CreatePosV: {x: 0, y: 0, z: 0}
-  CreatePosT: {fileID: 908226585}
-  Loop: 0
-  Chase: 1
 --- !u!1 &1279328813
 GameObject:
   m_ObjectHideFlags: 0

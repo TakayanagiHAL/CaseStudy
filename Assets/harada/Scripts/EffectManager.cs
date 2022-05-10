@@ -39,10 +39,29 @@ public class EffectManager : MonoBehaviour
         {
             DestroyEffect();
         }
+
+        // エフェクトお試しストップ
+        if (Keyboard.current.sKey.wasReleasedThisFrame)
+        {
+            // アニメーションクリップの取得
+            effectAnimator = EffectObject.GetComponent<Animator>();
+
+            effectAnimator.speed = 0;
+        }
+
+        // エフェクトお試し再生
+        if (Keyboard.current.aKey.wasReleasedThisFrame)
+        {
+            // アニメーションクリップの取得
+            effectAnimator = EffectObject.GetComponent<Animator>();
+
+            effectAnimator.speed = 1;
+        }
+
 #endif
 
         // Chaseがtrueならtransformの座標に追従する
-        if(Chase && EffectObject != null)
+        if (Chase && EffectObject != null)
         {
             EffectObject.transform.position = CreatePosT.position;
         }

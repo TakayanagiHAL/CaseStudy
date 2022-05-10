@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 47203cb37e2348344ba2042eca73f67b
+guid: f02ba5375bc45194db73ebf2fbcc1a0a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4271235649953398378
-    second: anim_bubble_hit_gyaku_0
+      213: 1735861495025679034
+    second: anim_bubble_hit_reverse_0
   - first:
-      213: -5842602446665619165
-    second: anim_bubble_hit_gyaku_1
+      213: -6172218086539637845
+    second: anim_bubble_hit_reverse_1
   - first:
-      213: -4851421900160629845
-    second: anim_bubble_hit_gyaku_2
+      213: 7528935255345046204
+    second: anim_bubble_hit_reverse_2
   - first:
-      213: -8929964511809754899
-    second: anim_bubble_hit_gyaku_3
+      213: -3542673057049447382
+    second: anim_bubble_hit_reverse_3
   - first:
-      213: -7061362250154777308
-    second: anim_bubble_hit_gyaku_4
+      213: 2093862703184489020
+    second: anim_bubble_hit_reverse_4
   - first:
-      213: 2262555538212162431
-    second: anim_bubble_hit_gyaku_5
+      213: 7447173592515722534
+    second: anim_bubble_hit_reverse_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: anim_bubble_hit_gyaku_0
+      name: anim_bubble_hit_reverse_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 878
-        width: 775
-        height: 877
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ef473913a764b30800000000000000
-      internalID: 4271235649953398378
+      spriteID: abab84e25d4071810800000000000000
+      internalID: 1735861495025679034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_bubble_hit_gyaku_1
+      name: anim_bubble_hit_reverse_1
       rect:
         serializedVersion: 2
-        x: 775
-        y: 878
-        width: 775
-        height: 877
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 329eaaab708eaeea0800000000000000
-      internalID: -5842602446665619165
+      spriteID: bab40932a50e75aa0800000000000000
+      internalID: -6172218086539637845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_bubble_hit_gyaku_2
+      name: anim_bubble_hit_reverse_2
       rect:
         serializedVersion: 2
-        x: 1550
-        y: 878
-        width: 775
-        height: 877
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba300695c794cacb0800000000000000
-      internalID: -4851421900160629845
+      spriteID: cb2a1c789b62c7860800000000000000
+      internalID: 7528935255345046204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_bubble_hit_gyaku_3
+      name: anim_bubble_hit_reverse_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 775
-        height: 877
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de82cb8e694621480800000000000000
-      internalID: -8929964511809754899
+      spriteID: a24783fdf95e5dec0800000000000000
+      internalID: -3542673057049447382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_bubble_hit_gyaku_4
+      name: anim_bubble_hit_reverse_4
       rect:
         serializedVersion: 2
-        x: 775
-        y: 1
-        width: 775
-        height: 877
+        x: 256
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 425eb293270010e90800000000000000
-      internalID: -7061362250154777308
+      spriteID: c3a20c7e805ee0d10800000000000000
+      internalID: 2093862703184489020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_bubble_hit_gyaku_5
+      name: anim_bubble_hit_reverse_5
       rect:
         serializedVersion: 2
-        x: 1550
-        y: 1
-        width: 775
-        height: 877
+        x: 512
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7b8ab34646366f10800000000000000
-      internalID: 2262555538212162431
+      spriteID: 62db192fceca95760800000000000000
+      internalID: 7447173592515722534
       vertices: []
       indices: 
       edges: []
