@@ -6,38 +6,17 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "Scene_Database", menuName = "Scene Data/Database")]
 public class ScenesData : ScriptableObject
 {
-    /// <summary>
-    /// åªç›çÏê¨Ç≥ÇÍÇƒÇ¢ÇÈÉåÉxÉãÇ÷ÇÃéQè∆
-    /// </summary>
-    public LevelScene startLevel;
-    public LevelScene currentLevel;
+    [System.Serializable]
+    public class SCENE_INFO
+    {
+       public string SCENETYPE;
+       public string SCENENAME;
+    }
 
-    private void OnEnable()
+    public List<SCENE_INFO> sceneInfo;
+
+    public void MoveToLevel(SCENE_TYPE sceneType)
     {
-        Debug.Log("Enable");
-        currentLevel = startLevel;
-    }
-    //Load a scene with a given name
-    public void LoadLevelWithName(string name)
-    {
-        //Load Gameplay scene for the level
-        SceneManager.LoadSceneAsync(name);
-    }
-    //Start next level
-    public void NextLevel()
-    {
-        LoadLevelWithName(currentLevel.nextScene.sceneName);
-        currentLevel = currentLevel.nextScene;
-    }
-    //Restart current level
-    public void RestartLevel()
-    {
-        LoadLevelWithName(currentLevel.sceneName);
-    }
-    //New game, load level 1
-    public void NewGame()
-    {
-        currentLevel = startLevel;
-        LoadLevelWithName(currentLevel.sceneName);
+        SceneManager.LoadSceneAsync(sceneInfo[(int)sceneType].SCENENAME);
     }
 }

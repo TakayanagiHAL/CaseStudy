@@ -646,9 +646,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: d51ba89c5c6a312498c9fd70acf03bbe, type: 2}
-        m_TargetAssemblyTypeName: ScenesData, Assembly-CSharp
-        m_MethodName: NextLevel
-        m_Mode: 1
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

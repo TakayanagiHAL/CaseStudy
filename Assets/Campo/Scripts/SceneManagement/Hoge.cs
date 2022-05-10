@@ -9,17 +9,16 @@ public class Hoge : MonoBehaviour
 
     public Animator m_animator;
 
-
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !pressed)
         {
             pressed = true;
-            LoadNextLevel();
+            MoveToLevel();
         }
     }
-    public void LoadNextLevel()
+    public void MoveToLevel()
     {
         StartCoroutine(LoadLevel());
     }
@@ -31,6 +30,6 @@ public class Hoge : MonoBehaviour
 
         yield return new WaitForSeconds(m_animator.GetCurrentAnimatorClipInfo(0).Length);
 
-        scenesData.NextLevel();
+
     }
 }

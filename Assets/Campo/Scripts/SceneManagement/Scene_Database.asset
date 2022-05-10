@@ -12,5 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00200e71228ae8a4f9b5ad17a430d966, type: 3}
   m_Name: Scene_Database
   m_EditorClassIdentifier: 
-  startLevel: {fileID: 11400000, guid: b8acbe0cfa49b24408be195a888a6c8b, type: 2}
-  currentLevel: {fileID: 11400000, guid: 0e4e08be82b02fc498a03f42c3e6dd4f, type: 2}
+  sceneInfo:
+  - SCENETYPE: TITLE
+    SCENENAME: 
+  - SCENETYPE: MENU
+    SCENENAME: 
+  - SCENETYPE: LEVEL_1
+    SCENENAME: TestScene_A
+  - SCENETYPE: LEVEL_2
+    SCENENAME: TestScene_B
+  - SCENETYPE: LEVEL_3
+    SCENENAME: TestScene_C
+  - SCENETYPE: PAUSE
+    SCENENAME: 
+  - SCENETYPE: RESULTS
+    SCENENAME: 
+  - SCENETYPE: GAMEOVER
+    SCENENAME: 
