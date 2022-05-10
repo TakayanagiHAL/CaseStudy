@@ -88,6 +88,7 @@ public class player : MonoBehaviour
             if (power < Triger.ReadValue<float>())
             {
                 power = Triger.ReadValue<float>();
+                power = ((int)(power * 10 / 2)) * 0.2f;
                 Debug.Log(power);
             }
         }
@@ -99,6 +100,14 @@ public class player : MonoBehaviour
         Vector2 force = new Vector2(Mathf.Cos(transform.localEulerAngles.z * 3.14f / 180.0f), Mathf.Sin(transform.localEulerAngles.z * 3.14f / 180.0f));
         Rigidbody2D.AddForce(force * power * impactPower, ForceMode2D.Impulse);
 
+        // 泡のエフェクト再生
+        this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
+
         Debug.Log("Inpact");
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("hit");
     }
 }
