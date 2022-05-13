@@ -1,0 +1,11 @@
+public enum SCENE_TYPE
+{
+	TITLE,
+	MENU,
+	LEVEL_1,
+	LEVEL_2,
+	LEVEL_3,
+	PAUSE,
+	RESULTS,
+	GAMEOVER,
+}
