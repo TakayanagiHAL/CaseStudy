@@ -100,6 +100,9 @@ public class player : MonoBehaviour
         Vector2 force = new Vector2(Mathf.Cos(transform.localEulerAngles.z * 3.14f / 180.0f), Mathf.Sin(transform.localEulerAngles.z * 3.14f / 180.0f));
         Rigidbody2D.AddForce(force * power * impactPower, ForceMode2D.Impulse);
 
+        // 泡のエフェクト再生
+        this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
+
         Debug.Log("Inpact");
     }
 

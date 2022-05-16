@@ -175,6 +175,13 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.zeshmouttsassets.unityscenesasscriptableobjects": {
+      "version": "https://github.com/ZeShmoutt/Unity-Scene-ScriptableObject.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a06bd1af7dd1443be87d5ed8389ea5342d5cd854"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
