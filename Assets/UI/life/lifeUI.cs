@@ -21,12 +21,14 @@ public class lifeUI : MonoBehaviour
 
     public void LifeUp()
     {
+        if (life == 3) return;
+
         life++;
         bable[life - 1].enabled = true;
     }
     public void LifeDown()
     {
         life--;
-        bable[life - 1].enabled = false;
+        bable[life].enabled = false;
     }
 }

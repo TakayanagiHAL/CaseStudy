@@ -13,6 +13,7 @@ public class player : MonoBehaviour
     [SerializeField] float impactPower;
 
     [SerializeField] float addPowerMouse;
+    [SerializeField] lifeUI lifeUI;
 
     PlayerInput input;
 
@@ -108,6 +109,19 @@ public class player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("hit");
+        if(collision.gameObject.tag == "Damage")
+        {
+            lifeUI.LifeDown();
+        }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Hoimi")
+        {
+            lifeUI.LifeUp();
+        }
+    }
+
+
 }
