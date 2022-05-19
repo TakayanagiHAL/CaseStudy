@@ -50,6 +50,7 @@ public class fugu : MonoBehaviour
         if (collision.gameObject.tag != "Player") return;
 
         animator.SetBool("IsBig", true);
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
