@@ -14,6 +14,7 @@ public class player : MonoBehaviour
 
     [SerializeField] float addPowerMouse;
     [SerializeField] lifeUI lifeUI;
+    [SerializeField] Animator kurage_anim;
 
     PlayerInput input;
 
@@ -100,6 +101,8 @@ public class player : MonoBehaviour
     {
         Vector2 force = new Vector2(Mathf.Cos(transform.localEulerAngles.z * 3.14f / 180.0f), Mathf.Sin(transform.localEulerAngles.z * 3.14f / 180.0f));
         Rigidbody2D.AddForce(force * power * impactPower, ForceMode2D.Impulse);
+
+        kurage_anim.SetTrigger("Shot");
 
         // 泡のエフェクト再生
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
