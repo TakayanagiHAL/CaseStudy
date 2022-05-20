@@ -49,7 +49,7 @@ public class loadGage : MonoBehaviour
         float distance = GetProgress(player.transform.position);//dis.magnitude;
         Debug.Log(1.0f - (distance / maxLoad));
 
-        slider.value = 1.0f - (distance / maxLoad);
+        slider.value = distance / maxLoad;
     }
 
     float GetProgress(Vector3 PlayerPosition)
