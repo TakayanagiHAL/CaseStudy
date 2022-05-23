@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class fugu : MonoBehaviour
 {
     [SerializeField] float delta;
     [SerializeField] bool isHorizon;
     [SerializeField] float moveSpeed;
+    [SerializeField] bool isVector;
 
     float startPos;
     float count;
+    float tempScaleX;
 
     Animator animator;
 
@@ -27,6 +30,17 @@ public class fugu : MonoBehaviour
         }
 
         animator = this.GetComponentInChildren<Animator>();
+
+        tempScaleX = transform.localScale.x;
+
+        if (isVector)
+        {
+            transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
+        }
+        else
+        {
+            transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
+        }
     }
 
     // Update is called once per frame
@@ -43,6 +57,17 @@ public class fugu : MonoBehaviour
             transform.position = new Vector3(transform.position.x, Mathf.Sin(count) * delta + startPos, transform.position.z);
         }
 
+        if(delta > 0.0f)
+        {
+            if (Mathf.Cos(count) > 0)
+            {
+                transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
+            }
+            else
+            {
+                transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
