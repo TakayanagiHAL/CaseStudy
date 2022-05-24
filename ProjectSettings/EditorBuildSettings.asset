@@ -6,12 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Campo/Scenes/TestScene_A.unity
-    guid: 0c76a6c821dc51841bbb61ed075178d3
+    path: Assets/wataru/stage1_1.unity
+    guid: e7809d7264781714fadebe264f772cef
   - enabled: 1
-    path: Assets/Campo/Scenes/TestScene_B.unity
-    guid: dad5bf123644364438cd2f134fe9b8dc
+    path: Assets/wataru/stage1_2.unity
+    guid: 49217fbc7bfda4249a91f84a8f233c8e
   - enabled: 1
-    path: Assets/Campo/Scenes/TestScene_C.unity
-    guid: 6e3a9a24512b8ad4e8be3a6a880cbe66
+    path: Assets/wataru/stage1_3.unity
+    guid: 5f89c4469dfdabe4daeb1b9867e6ef7a
+  - enabled: 1
+    path: Assets/wataru/stage1_4.unity
+    guid: 6b519e0f7b2a2014ea3624f1c1c9d7f3
+  - enabled: 1
+    path: Assets/wataru/stage1_5.unity
+    guid: f00f9c3661ba8fe4cb2ec505338125ea
+  - enabled: 1
+    path: Assets/wataru/stage2_1.unity
+    guid: a5bb04dea531a8541a0102c4ff0650cc
+  - enabled: 1
+    path: Assets/wataru/stage2_2.unity
+    guid: 5d62ffa955916cb46a044b585f06cf18
   m_configObjects: {}
