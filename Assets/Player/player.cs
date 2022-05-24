@@ -13,6 +13,8 @@ public class player : MonoBehaviour
     [SerializeField] float impactPower;
 
     [SerializeField] float addPowerMouse;
+    [SerializeField] lifeUI lifeUI;
+    [SerializeField] Animator kurage_anim;
 
     PlayerInput input;
 
@@ -68,6 +70,7 @@ public class player : MonoBehaviour
 
             if (mouse.leftButton.isPressed)
             {
+                kurage_anim.SetBool("Shot", true);
                 power += addPowerMouse;
             }
 
@@ -81,12 +84,13 @@ public class player : MonoBehaviour
         {
             if (Triger.ReadValue<float>() <= 0)
             {
-                Inpact();
-                power = 0.0f;
+                    Inpact();
+                    power = 0.0f;
             }
 
             if (power < Triger.ReadValue<float>())
             {
+                kurage_anim.SetBool("Shot", true);
                 power = Triger.ReadValue<float>();
                 power = ((int)(power * 10 / 2)) * 0.2f;
                 Debug.Log(power);
@@ -100,6 +104,8 @@ public class player : MonoBehaviour
         Vector2 force = new Vector2(Mathf.Cos(transform.localEulerAngles.z * 3.14f / 180.0f), Mathf.Sin(transform.localEulerAngles.z * 3.14f / 180.0f));
         Rigidbody2D.AddForce(force * power * impactPower, ForceMode2D.Impulse);
 
+        kurage_anim.SetBool("Shot",false);
+
         // 泡のエフェクト再生
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
 
@@ -108,6 +114,19 @@ public class player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("hit");
+        if(collision.gameObject.tag == "Damage")
+        {
+            lifeUI.LifeDown();
+        }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Hoimi")
+        {
+            lifeUI.LifeUp();
+        }
+    }
+
+
 }
