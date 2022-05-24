@@ -11,17 +11,25 @@ public class EffectManager : MonoBehaviour
     [SerializeField] bool Loop;
     [SerializeField] bool Chase;
 
-
-    GameObject EffectObject;
+    public float timer = 0.0f;
+    float animTime = 0.0f;
     Animator effectAnimator;
-    AnimatorClipInfo[] effectAnimatorClipInfo;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // アニメーションクリップの取得
+        effectAnimator = EffectPrefab.GetComponent<Animator>();
+
+        // アニメーション時間の取得
+        animTime = effectAnimator.GetCurrentAnimatorClipInfo(0).Length;
+        timer = animTime;
+
+        // エフェクトプレハブをオフ設定
+        SetActiveEffectPrefab(false);
     }
+
 
     // Update is called once per frame
     void Update()
@@ -31,80 +39,45 @@ public class EffectManager : MonoBehaviour
         // エフェクトお試し生成
         if (Keyboard.current.cKey.wasReleasedThisFrame)
         {
-            CreateEffect(90.0f);
-        }
-
-        // エフェクトお試し消去
-        if (Keyboard.current.dKey.wasReleasedThisFrame)
-        {
-            DestroyEffect();
-        }
-
-        // エフェクトお試しストップ
-        if (Keyboard.current.sKey.wasReleasedThisFrame)
-        {
-            // アニメーションクリップの取得
-            effectAnimator = EffectObject.GetComponent<Animator>();
-
-            effectAnimator.speed = 0;
-        }
-
-        // エフェクトお試し再生
-        if (Keyboard.current.aKey.wasReleasedThisFrame)
-        {
-            // アニメーションクリップの取得
-            effectAnimator = EffectObject.GetComponent<Animator>();
-
-            effectAnimator.speed = 1;
+            SetActiveEffectPrefab(true);
         }
 
 #endif
 
         // Chaseがtrueならtransformの座標に追従する
-        if (Chase && EffectObject != null)
+        if (Chase)
         {
-            EffectObject.transform.position = CreatePosT.position;
+            EffectPrefab.transform.position = CreatePosT.position;
         }
 
+        // エフェクト消滅タイマー処理
+        if (EffectPrefab.activeSelf)
+        {
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                SetActiveEffectPrefab(false);
+
+                timer = animTime;
+            }
+        }
 
     }
 
-    // エフェクトの生成
-    // effectRotate...回転させたい角度の値（Z回転）
-    public void CreateEffect(float effectRotate)
+
+    // エフェクトの座標のセット
+    public void SetCreatePosV(Vector3 setVector)
     {
-        // インスタンス生成
-        // Transformが設定されていなければ指定した座標で生成
-        if (CreatePosT != null)
-        {
-            EffectObject = Instantiate(EffectPrefab, CreatePosT.transform.position, Quaternion.Euler(0, 0, effectRotate));
-        }
-        else
-        {
-            EffectObject = Instantiate(EffectPrefab, CreatePosV, Quaternion.Euler(0, 0, effectRotate));
-        }
-
-        
-        // ループ設定がオフならばアニメーション終了でインスタンスを消去
-        if(!Loop)
-        {
-            // インスタンス消去
-            DestroyEffect();
-        }
+        EffectPrefab.transform.position = setVector;
     }
 
 
-    // エフェクトの消去
-    void DestroyEffect()
+    // エフェクトの設定
+    public void SetActiveEffectPrefab(bool setBool)
     {
-        // アニメーションクリップの取得
-        effectAnimator = EffectObject.GetComponent<Animator>();
-        effectAnimatorClipInfo = effectAnimator.GetCurrentAnimatorClipInfo(0);
-
-        //Debug.Log(effectAnimatorClipInfo[0].clip.length);
-
-        // インスタンス消去
-        GameObject.Destroy(EffectObject, effectAnimatorClipInfo[0].clip.length);
+        EffectPrefab.SetActive(setBool);
     }
-
 }

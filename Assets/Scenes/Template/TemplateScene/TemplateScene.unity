@@ -274,6 +274,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 482047687280176826, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1693764669138903815, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -318,6 +322,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2246774296676251309, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976993245308734113, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759624254717550941, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7805143539369017872, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
       propertyPath: m_Name
       value: UIPrefab
@@ -334,6 +350,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 509724628}
+    - target: {fileID: 9120544014428929193, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
 --- !u!114 &813666292 stripped
@@ -347,6 +367,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d7b51cd5cefa394485c46006eb79c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &813666293 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5777525378844463235, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+  m_PrefabInstance: {fileID: 813666291}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2de18b5da5e5746ba21cf1e4fdcf8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!223 &813666294 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2976993245308734116, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+  m_PrefabInstance: {fileID: 813666291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &813666295 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2246774296676251296, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+  m_PrefabInstance: {fileID: 813666291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &813666296 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 482047687280176823, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+  m_PrefabInstance: {fileID: 813666291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &813666297 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 5084937241660892475, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+  m_PrefabInstance: {fileID: 813666291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1252366594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,6 +467,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3986987255833316072, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
+      propertyPath: life
+      value: 
+      objectReference: {fileID: 813666292}
+    - target: {fileID: -3986987255833316072, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 813666293}
+    - target: {fileID: -3986987255833316072, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
+      propertyPath: gameCanvas
+      value: 
+      objectReference: {fileID: 813666297}
+    - target: {fileID: -3986987255833316072, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
+      propertyPath: overCanvas
+      value: 
+      objectReference: {fileID: 813666295}
+    - target: {fileID: -3986987255833316072, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
+      propertyPath: poseCanvas
+      value: 
+      objectReference: {fileID: 813666294}
+    - target: {fileID: -3986987255833316072, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
+      propertyPath: clearCanvas
+      value: 
+      objectReference: {fileID: 813666296}
     - target: {fileID: 118463596443020726, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
       propertyPath: m_RootOrder
       value: 3
