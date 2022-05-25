@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 
 [ExecuteInEditMode]
 public class GameManagement : MonoBehaviour
@@ -12,10 +14,19 @@ public class GameManagement : MonoBehaviour
     public Timer timer;
     public lifeUI life;
 
+    PlayerInput input;
+    InputAction pose;
+
+    bool isIn = false;
+
     // Start is called before the first frame update
     void Start()
     {
-       
+        input = FindObjectOfType<PlayerInput>();
+
+        var actionMap = input.currentActionMap;
+
+        pose = actionMap["Pose"];
     }
 
     // Update is called once per frame
@@ -30,6 +41,22 @@ public class GameManagement : MonoBehaviour
                     canvas[i].enabled = bools[i];
                 }
             }
+        }
+        if(pose.ReadValue<float>() > 0)
+        {
+            if (!isIn)
+            {
+                bools[3] = !bools[3];
+            }
+        }
+        
+        if (pose.ReadValue<float>() > 0)
+        {
+            isIn = true;
+        }
+        else
+        {
+            isIn = false;
         }
     }
 }
