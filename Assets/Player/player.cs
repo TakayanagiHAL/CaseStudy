@@ -79,7 +79,7 @@ public class player : MonoBehaviour
             Vector2 MousePos = mouse.position.ReadValue();
             MousePos.x -= Screen.width / 2;
             MousePos.y -= Screen.height / 2;
-            Debug.Log(MousePos);
+            //Debug.Log(MousePos);
 
             transform.rotation = Quaternion.FromToRotation(Vector3.up, MousePos);
 
