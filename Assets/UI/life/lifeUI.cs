@@ -28,7 +28,13 @@ public class lifeUI : MonoBehaviour
     }
     public void LifeDown()
     {
+        if (life <= 0) return;
+
         life--;
         bable[life].enabled = false;
+    }
+    public int GetLife()
+    {
+        return life;
     }
 }
