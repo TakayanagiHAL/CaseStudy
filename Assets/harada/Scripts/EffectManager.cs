@@ -6,17 +6,30 @@ using UnityEngine.InputSystem;
 public class EffectManager : MonoBehaviour
 {
     [SerializeField] GameObject EffectPrefab;
-    [SerializeField] Vector3 CreatePos;
+    [SerializeField] Vector3 CreatePosV;
+    [SerializeField] Transform CreatePosT;
     [SerializeField] bool Loop;
+    [SerializeField] bool Chase;
 
-    GameObject EffectObject;
-    
+    public float timer = 0.0f;
+    float animTime = 0.0f;
+    Animator effectAnimator;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        // アニメーションクリップの取得
+        effectAnimator = EffectPrefab.GetComponent<Animator>();
 
+        // アニメーション時間の取得
+        animTime = effectAnimator.GetCurrentAnimatorClipInfo(0).Length;
+        timer = animTime;
+
+        // エフェクトプレハブをオフ設定
+        SetActiveEffectPrefab(false);
     }
+
 
     // Update is called once per frame
     void Update()
@@ -26,39 +39,45 @@ public class EffectManager : MonoBehaviour
         // エフェクトお試し生成
         if (Keyboard.current.cKey.wasReleasedThisFrame)
         {
-            CreateEffect();
+            SetActiveEffectPrefab(true);
         }
 
-        // エフェクトお試し消去
-        if (Keyboard.current.dKey.wasReleasedThisFrame)
-        {
-            DestroyEffect();
-        }
 #endif
 
-
-    }
-
-    // エフェクトの生成
-    void CreateEffect()
-    {
-        // インスタンス生成
-        EffectObject = Instantiate(EffectPrefab, CreatePos, Quaternion.identity);
-
-        // ループ設定がオフならばアニメーション終了でインスタンスを消去
-        if(!Loop)
+        // Chaseがtrueならtransformの座標に追従する
+        if (Chase)
         {
-            // インスタンス消去
-            DestroyEffect();
+            EffectPrefab.transform.position = CreatePosT.position;
         }
+
+        // エフェクト消滅タイマー処理
+        if (EffectPrefab.activeSelf)
+        {
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                SetActiveEffectPrefab(false);
+
+                timer = animTime;
+            }
+        }
+
     }
 
 
-    // エフェクトの消去
-    void DestroyEffect()
+    // エフェクトの座標のセット
+    public void SetCreatePosV(Vector3 setVector)
     {
-        // インスタンス消去
-        GameObject.Destroy(EffectObject, 1.0f);
+        EffectPrefab.transform.position = setVector;
     }
 
+
+    // エフェクトの設定
+    public void SetActiveEffectPrefab(bool setBool)
+    {
+        EffectPrefab.SetActive(setBool);
+    }
 }

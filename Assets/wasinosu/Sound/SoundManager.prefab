@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8526544009693718723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2679546148898096230}
+  - component: {fileID: 6386777048319510852}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2679546148898096230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526544009693718723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6386777048319510852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526544009693718723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0685f18436fd84841a5d2e843844542e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGM_Datas:
+  - BGM_Name: "\u30E1\u30A4\u30F3"
+    BGM_Clip: {fileID: 8300000, guid: 9d5297f0e1eaec746b6d5379a446586a, type: 3}
+  - BGM_Name: "\u30BB\u30EC\u30AF\u30C8"
+    BGM_Clip: {fileID: 8300000, guid: f7e880abff387c449b2f6a45d5177dd3, type: 3}
+  SE_Datas:
+  - SE_Name: "\u30B2\u30FC\u30E0\u30AF\u30EA\u30A2"
+    SE_Clip: {fileID: 8300000, guid: 7fb0bbe54c7929f46aa0fbe685371e9c, type: 3}
+  - SE_Name: "\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC"
+    SE_Clip: {fileID: 8300000, guid: a9215857706b02044a0fe5fba459bc87, type: 3}
+  - SE_Name: "\u30AF\u30EA\u30C3\u30AF"
+    SE_Clip: {fileID: 8300000, guid: 7a4d1d618e977bf48aa120fa3e9c97d3, type: 3}
+  BGM_Volume: 0.1
+  SE_Volume: 0.1
+  Mute: 0
