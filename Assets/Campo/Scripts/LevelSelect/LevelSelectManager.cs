@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class LevelSelectManager : MonoBehaviour
 {
-    public int levelToCheck;
+    [Tooltip("{world}_{ stage}å`éÆÇ≈Ç†ÇÈÇ±Ç∆ÅB\n  ó·ÅF1_1")]
+    public string levelToCheck;
 
     private Button button;
 
@@ -18,7 +19,7 @@ public class LevelSelectManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("Level " + levelToCheck + " Clear") == 1 || levelToCheck == 0)
+        if (PlayerPrefs.GetInt("Stage_" + levelToCheck + "_Clear") == 1 || levelToCheck == "0_0")
         {
             button.interactable = true;
         }
