@@ -29,7 +29,7 @@ public class SceneDatabaseTransitionButton : MonoBehaviour, IPointerDownHandler,
     {
         if (!interactable)
         {
-            targetGraphic.color = disabledColor;
+            targetGraphic.color *= disabledColor;
         }
     }
 
@@ -37,7 +37,7 @@ public class SceneDatabaseTransitionButton : MonoBehaviour, IPointerDownHandler,
     {
         if (interactable && !pressed)
         {
-            targetGraphic.color = normalColor;
+            targetGraphic.color *= normalColor;
         }
         selected = false;
     }
@@ -46,7 +46,7 @@ public class SceneDatabaseTransitionButton : MonoBehaviour, IPointerDownHandler,
     {
         if (interactable)
         {
-            targetGraphic.color = normalColor;
+            targetGraphic.color *= normalColor;
             pressed = false;
         }
 
@@ -60,7 +60,7 @@ public class SceneDatabaseTransitionButton : MonoBehaviour, IPointerDownHandler,
     {
         if (interactable)
         {
-            targetGraphic.color = pressedColor;
+            targetGraphic.color *= pressedColor;
             pressed = true;
         }
     }
@@ -69,7 +69,7 @@ public class SceneDatabaseTransitionButton : MonoBehaviour, IPointerDownHandler,
     {
         if (interactable && !pressed)
         {
-            targetGraphic.color = hoverColor;
+            targetGraphic.color *= hoverColor;
         }
         selected = true;
     }
