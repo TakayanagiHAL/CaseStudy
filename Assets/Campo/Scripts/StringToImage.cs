@@ -22,6 +22,7 @@ public class StringToImage : MonoBehaviour
 
     public Sprite[] sprites;
     public Image[] images;
+    public Timer timer;
     public float timerValue;
 
     private string timerAsString;
@@ -33,6 +34,7 @@ public class StringToImage : MonoBehaviour
 
     private void Update()
     {
+        timerValue = timer.time;
         splitString = new string[6];
         // Get the float timer as string
         timerAsString = timerValue.ToString("000.00");

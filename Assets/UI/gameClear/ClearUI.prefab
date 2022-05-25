@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 542259329145378145}
   - component: {fileID: 542259329145378144}
   - component: {fileID: 542259329145378159}
+  - component: {fileID: 2732739892300811980}
   m_Layer: 5
   m_Name: NextLevelButton
   m_TagString: Untagged
@@ -194,7 +195,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 542259329145378144}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2732739892300811980}
+        m_TargetAssemblyTypeName: SceneTransitionNextFromDatabase, Assembly-CSharp
+        m_MethodName: FadeToNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2732739892300811980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542259329145378157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a92ce9051d25646b84f9838446374e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneDatabase: {fileID: 11400000, guid: d51ba89c5c6a312498c9fd70acf03bbe, type: 2}
+  fadeAnimator: {fileID: 6084334674045543956}
 --- !u!1 &542259329154243174
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +655,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542259329494007279}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -754,6 +781,7 @@ MonoBehaviour:
   - {fileID: 2832113621562077081}
   - {fileID: 6136903343973326818}
   - {fileID: 5244276273625600235}
+  timer: {fileID: 0}
   timerValue: 0
 --- !u!1 &542259329813589437
 GameObject:
@@ -1614,7 +1642,7 @@ Animator:
   m_GameObject: {fileID: 6084334674045543958}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3e76c6f8a83c88c4483311fbfc73ad77, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8976aba984497664e8ebc05ae64dd083, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -43,3 +43,4 @@ MonoBehaviour:
     SCENENAME: 
   - SCENETYPE: GAMEOVER
     SCENENAME: 
+  currentScene: 2
