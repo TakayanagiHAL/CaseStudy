@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     [SerializeField] Sprite[] number;
 
     bool activeTimer = true;
-    float time;
+    public float time;
     private int IntTime;
     private string StringInt;
     private int DecimalTime;

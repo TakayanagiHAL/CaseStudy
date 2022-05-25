@@ -608,6 +608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClearUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7943144344206736239, guid: 12ba197b2a953224f9964ac2b210cecc, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 873127002267814941}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ba197b2a953224f9964ac2b210cecc, type: 3}
 --- !u!224 &482047687280176822 stripped
@@ -823,6 +827,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3243549362121830165, guid: 9158bc1b1adcce84f8b25cb95e1e38cf, type: 3}
   m_PrefabInstance: {fileID: 2386519212543632137}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &873127002267814941 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3243549362121830164, guid: 9158bc1b1adcce84f8b25cb95e1e38cf, type: 3}
+  m_PrefabInstance: {fileID: 2386519212543632137}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2de18b5da5e5746ba21cf1e4fdcf8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2687866467684382397
 PrefabInstance:
   m_ObjectHideFlags: 0
