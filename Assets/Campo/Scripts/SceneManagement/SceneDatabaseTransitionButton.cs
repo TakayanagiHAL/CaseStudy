@@ -20,6 +20,8 @@ public class SceneDatabaseTransitionButton : MonoBehaviour, IPointerDownHandler,
     public ScenesData sceneDatabase;
     public SCENE_TYPE moveToSceneType;
 
+    public Animator fadeAnimator;
+
     private void Awake()
     {
         targetGraphic = GetComponent<Image>();
@@ -52,7 +54,7 @@ public class SceneDatabaseTransitionButton : MonoBehaviour, IPointerDownHandler,
 
         if (interactable && selected)
         {
-            sceneDatabase.MoveToLevel(moveToSceneType);
+            StartCoroutine(LoadLevel());
         }
     }
 
@@ -72,5 +74,15 @@ public class SceneDatabaseTransitionButton : MonoBehaviour, IPointerDownHandler,
             targetGraphic.color *= hoverColor;
         }
         selected = true;
+    }
+
+    // Fade/Animation Transition
+    IEnumerator LoadLevel()
+    {
+        fadeAnimator.SetTrigger("FadeIn");
+
+        yield return new WaitForSeconds(fadeAnimator.GetCurrentAnimatorClipInfo(0).Length);
+
+        sceneDatabase.MoveToLevel(moveToSceneType);
     }
 }
