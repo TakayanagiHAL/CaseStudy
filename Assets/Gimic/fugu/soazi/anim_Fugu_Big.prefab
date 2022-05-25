@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4156023743726619582}
   - component: {fileID: 752572872614424447}
-  - component: {fileID: 285544430731733278}
   - component: {fileID: 3407337799389149604}
   m_Layer: 0
   m_Name: anim_Fugu_Big
@@ -84,25 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &285544430731733278
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4341360764860093527}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cbceeb0a51d1b434281d4f696718c92c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &3407337799389149604
 BoxCollider2D:
   m_ObjectHideFlags: 0
