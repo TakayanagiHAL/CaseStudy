@@ -86,7 +86,7 @@ Animator:
   m_GameObject: {fileID: 891361987851803063}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3e76c6f8a83c88c4483311fbfc73ad77, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8976aba984497664e8ebc05ae64dd083, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -293,7 +293,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3909055407111401100}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3601773415852503459}
+        m_TargetAssemblyTypeName: SceneTransitionFromDatabase, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3909055407205118671
 GameObject:
   m_ObjectHideFlags: 0
