@@ -153,7 +153,6 @@ public class player : MonoBehaviour
         kurage_anim.SetBool("Shot",false);
 
         //hitEF[(int)((power * 5) - 1)].SetActiveEffectPrefab(true);
-
         // 泡のエフェクト再生
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
 
