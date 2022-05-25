@@ -1,7 +1,7 @@
 public enum SCENE_TYPE
 {
 	TITLE,
-	MENU,
+	STAGE_SELECT,
 	LEVEL_1_1,
 	LEVEL_1_2,
 	LEVEL_1_3,

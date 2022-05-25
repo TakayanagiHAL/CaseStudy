@@ -15,8 +15,8 @@ MonoBehaviour:
   sceneInfo:
   - SCENETYPE: TITLE
     SCENENAME: 
-  - SCENETYPE: MENU
-    SCENENAME: 
+  - SCENETYPE: STAGE_SELECT
+    SCENENAME: LevelSelectScene
   - SCENETYPE: LEVEL_1_1
     SCENENAME: stage1_1
   - SCENETYPE: LEVEL_1_2
