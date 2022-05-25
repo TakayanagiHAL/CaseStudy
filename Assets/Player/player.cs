@@ -29,6 +29,23 @@ public class player : MonoBehaviour
     public float power =0;
 
     Rigidbody2D Rigidbody2D;
+
+    // Saved speeds and directions on pause
+    Vector3 savedVelocity;
+    float savedAngularVelocity;
+
+    private void Awake()
+    {
+        // Subscribe to the gamestate manager
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDestroy()
+    {
+        // Unsubscribe to the gamestate manager to prevent memory leaks
+        GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -159,5 +176,18 @@ public class player : MonoBehaviour
         }
     }
 
+    // Listen for the gamestate event
+    private void OnGameStateChanged(GAME_STATE newGameState)
+    {
+        if (newGameState == GAME_STATE.PAUSE)
+        {
+            Rigidbody2D.simulated = false;
+        }
+        else
+        {
+            Rigidbody2D.simulated = true;
+        }
 
+        enabled = newGameState == GAME_STATE.GAMEPLAY;        
+    }
 }
