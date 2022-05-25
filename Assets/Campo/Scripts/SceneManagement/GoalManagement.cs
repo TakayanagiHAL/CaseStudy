@@ -35,7 +35,7 @@ public class GoalManagement : MonoBehaviour
             gameManagement.bools[1] = true;
 
             //　ゲームクリア
-
+            GameStateManager.Instance.SetState(GAME_STATE.GAMEEND);
         }
     }
 }

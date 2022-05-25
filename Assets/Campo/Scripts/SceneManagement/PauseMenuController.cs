@@ -21,7 +21,10 @@ public class PauseMenuController : MonoBehaviour
     // Listen for the gamestate event
     private void OnGameStateChanged(GAME_STATE newGameState)
     {
-        enabled = newGameState == GAME_STATE.GAMEPLAY;
-        gameManager.bools[3] = !gameManager.bools[3];
+        if (newGameState != GAME_STATE.GAMEEND)
+        {
+            enabled = newGameState == GAME_STATE.GAMEPLAY;
+            gameManager.bools[3] = !gameManager.bools[3];
+        }
     }
 }

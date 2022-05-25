@@ -30,10 +30,6 @@ public class player : MonoBehaviour
 
     Rigidbody2D Rigidbody2D;
 
-    // Saved speeds and directions on pause
-    Vector3 savedVelocity;
-    float savedAngularVelocity;
-
     private void Awake()
     {
         // Subscribe to the gamestate manager
@@ -178,7 +174,7 @@ public class player : MonoBehaviour
     // Listen for the gamestate event
     private void OnGameStateChanged(GAME_STATE newGameState)
     {
-        if (newGameState == GAME_STATE.PAUSE)
+        if (newGameState != GAME_STATE.GAMEPLAY)
         {
             Rigidbody2D.simulated = false;
         }
