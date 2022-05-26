@@ -1,0 +1,44 @@
+{
+    "name": "ManagerInput",
+    "maps": [
+        {
+            "name": "managerInput",
+            "id": "73496739-aa10-482f-8b6d-97a84187e0b1",
+            "actions": [
+                {
+                    "name": "Pose",
+                    "type": "Button",
+                    "id": "97d18ba7-5d58-4c0d-af35-b07797df2eac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8f92fe95-4a3d-4830-9a88-74328b638f68",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pose",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3b3128e-4b26-4a80-99a2-b8fc9f7a4e0a",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pose",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

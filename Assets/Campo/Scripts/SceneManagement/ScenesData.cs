@@ -14,9 +14,11 @@ public class ScenesData : ScriptableObject
     }
 
     public List<SCENE_INFO> sceneInfo;
+    public SCENE_TYPE currentScene;
 
     public void MoveToLevel(SCENE_TYPE sceneType)
     {
+        currentScene = sceneType;
         SceneManager.LoadSceneAsync(sceneInfo[(int)sceneType].SCENENAME);
     }
 }
