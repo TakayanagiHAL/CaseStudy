@@ -6,7 +6,7 @@ public class PauseController : MonoBehaviour
 {     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && GameStateManager.Instance.CurrentGameState != GAME_STATE.GAMEEND)
         {
             GAME_STATE currentGameState = GameStateManager.Instance.CurrentGameState;
             GAME_STATE newGameState = currentGameState == GAME_STATE.GAMEPLAY
