@@ -8,7 +8,8 @@ public class fugu : MonoBehaviour
     [SerializeField] float delta;
     [SerializeField] bool isHorizon;
     [SerializeField] float moveSpeed;
-    [SerializeField] bool isVector;
+    [SerializeField] bool isStartVector;
+    [SerializeField] bool isChangeVector;
 
     float startPos;
     float count;
@@ -17,6 +18,7 @@ public class fugu : MonoBehaviour
     Animator animator;
 
     bool isSmalling = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +35,7 @@ public class fugu : MonoBehaviour
 
         tempScaleX = transform.localScale.x;
 
-        if (isVector)
+        if (isStartVector)
         {
             transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
         }
@@ -57,7 +59,7 @@ public class fugu : MonoBehaviour
             transform.position = new Vector3(transform.position.x, Mathf.Sin(count) * delta + startPos, transform.position.z);
         }
 
-        if(delta > 0.0f)
+        if (delta > 0.0f && isChangeVector)
         {
             if (Mathf.Cos(count) > 0)
             {
@@ -68,6 +70,8 @@ public class fugu : MonoBehaviour
                 transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
             }
         }
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
