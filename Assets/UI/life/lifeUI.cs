@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class lifeUI : MonoBehaviour
 {
     [SerializeField] Image[] bable;
+    [SerializeField] bubble_burst[] burstObjs;
     int life;
     // Start is called before the first frame update
     void Start()
@@ -30,5 +31,6 @@ public class lifeUI : MonoBehaviour
     {
         life--;
         bable[life].enabled = false;
+        burstObjs[life].StartAnime();
     }
 }

@@ -7,7 +7,6 @@ public class Shell : MonoBehaviour
     [SerializeField] GameObject bubble;
     Transform bubblePool;
 
-    private float cooltime = 3.0f;
     private float opentime = 1.0f;
     private Rigidbody2D rd;
     private Animator animeter;
@@ -26,16 +25,7 @@ public class Shell : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cooltime -= Time.deltaTime;
         opentime -= Time.deltaTime;
-        //if(cooltime < 0)
-        //{
-        //    var awa = SetObject();
-        //    rd = awa.GetComponent<Rigidbody2D>();
-        //    Vector3 force = new Vector3(0.0f, 1.0f, 0.0f);
-        //    rd.AddForce(force, ForceMode2D.Force);
-        //    cooltime = 3.0f;
-        //}
 
         if(!isOpen && opentime < 0)
         {
