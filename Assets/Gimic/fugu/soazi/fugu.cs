@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class fugu : MonoBehaviour
 {
     [SerializeField] float delta;
     [SerializeField] bool isHorizon;
     [SerializeField] float moveSpeed;
+    [SerializeField] bool isStartVector;
+    [SerializeField] bool isChangeVector;
 
     float startPos;
     float count;
+    float tempScaleX;
 
     Animator animator;
 
     bool isSmalling = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +32,17 @@ public class fugu : MonoBehaviour
         }
 
         animator = this.GetComponentInChildren<Animator>();
+
+        tempScaleX = transform.localScale.x;
+
+        if (isStartVector)
+        {
+            transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
+        }
+        else
+        {
+            transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
+        }
     }
 
     // Update is called once per frame
@@ -43,6 +59,19 @@ public class fugu : MonoBehaviour
             transform.position = new Vector3(transform.position.x, Mathf.Sin(count) * delta + startPos, transform.position.z);
         }
 
+        if (delta > 0.0f && isChangeVector)
+        {
+            if (Mathf.Cos(count) > 0)
+            {
+                transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
+            }
+            else
+            {
+                transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
+            }
+        }
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,6 +79,7 @@ public class fugu : MonoBehaviour
         if (collision.gameObject.tag != "Player") return;
 
         animator.SetBool("IsBig", true);
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
