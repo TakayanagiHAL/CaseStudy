@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/wasinosu/Title/Title.unity
+    guid: 550fadb12c1d54c45898b1c129342475
+  - enabled: 1
     path: Assets/Campo/Scenes/LevelSelectScene.unity
     guid: af616f55b1cc8b145b208c6db785fee2
   - enabled: 1

@@ -12,18 +12,20 @@ public class CountdownTimer : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
+
     {
         image = GetComponent<Image>();
         GameStateManager.Instance.SetState(GAME_STATE.GAMESTART);
+        SoundManager.instance.PlaySE("カウントダウン");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timer > 0)
+        if (timer > -1)
         {
             timer -= Time.deltaTime;
-            image.sprite = numSprites[(int)timer];
+            image.sprite = numSprites[(int)(timer+1)];
         }
         else
         {
