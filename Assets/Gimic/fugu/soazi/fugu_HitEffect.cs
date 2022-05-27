@@ -6,12 +6,13 @@ using UnityEngine.InputSystem;
 public class fugu_HitEffect : MonoBehaviour
 {
     [SerializeField] GameObject MoveEffect;
+    [SerializeField] float HitEffectAdjustX;
+    [SerializeField] float HitEffectAdjustY;
 
     Animator MoveEffectAnimator;
     bool last = false;
     float timer;
     float animTime = 0.5f;
-
 
     // Start is called before the first frame update
     void Start()
