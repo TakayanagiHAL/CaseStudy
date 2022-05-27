@@ -23,6 +23,8 @@ public class TitleManager : MonoBehaviour
         {
             //Any Key Pressed
 
+            SceneTransitionFromDatabase sceneTransition = GetComponent<SceneTransitionFromDatabase>();
+            sceneTransition.FadeToStage();
         }
     }
 }
