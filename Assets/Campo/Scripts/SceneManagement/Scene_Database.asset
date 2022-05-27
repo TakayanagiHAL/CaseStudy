@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneInfo:
   - SCENETYPE: TITLE
-    SCENENAME: 
+    SCENENAME: Title
   - SCENETYPE: STAGE_SELECT
     SCENENAME: LevelSelectScene
   - SCENETYPE: LEVEL_1_1
