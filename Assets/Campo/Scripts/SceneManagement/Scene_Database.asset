@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00200e71228ae8a4f9b5ad17a430d966, type: 3}
+  m_Name: Scene_Database
+  m_EditorClassIdentifier: 
+  sceneInfo:
+  - SCENETYPE: TITLE
+    SCENENAME: Title
+  - SCENETYPE: STAGE_SELECT
+    SCENENAME: LevelSelectScene
+  - SCENETYPE: LEVEL_1_1
+    SCENENAME: stage1_1
+  - SCENETYPE: LEVEL_1_2
+    SCENENAME: stage1_2
+  - SCENETYPE: LEVEL_1_3
+    SCENENAME: stage1_3
+  - SCENETYPE: LEVEL_1_4
+    SCENENAME: stage1_4
+  - SCENETYPE: LEVEL_1_5
+    SCENENAME: stage1_5
+  - SCENETYPE: LEVEL_2_1
+    SCENENAME: stage2_1
+  - SCENETYPE: LEVEL_2_2
+    SCENENAME: stage2_2
+  - SCENETYPE: LEVEL_2_3
+    SCENENAME: stage2_3
+  - SCENETYPE: LEVEL_2_4
+    SCENENAME: stage2_4
+  - SCENETYPE: LEVEL_2_5
+    SCENENAME: stage2_5
+  - SCENETYPE: PAUSE
+    SCENENAME: 
+  - SCENETYPE: RESULTS
+    SCENENAME: 
+  - SCENETYPE: GAMEOVER
+    SCENENAME: 
+  currentScene: 2
