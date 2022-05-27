@@ -20,7 +20,8 @@ public class Awa : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         if (collision.gameObject.CompareTag("Player"))
-        { 
+        {
+            SoundManager.instance.PlaySE("‰ñ•œ");
             Debug.Log("get!!");
         }
     }
