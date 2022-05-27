@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4723164622128571873}
   - component: {fileID: 1346022793674143107}
   m_Layer: 0
-  m_Name: EF_hugu_hit
+  m_Name: EF_fugu_hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

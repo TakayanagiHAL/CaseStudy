@@ -5,15 +5,29 @@ using UnityEngine.InputSystem;
 
 public class fugu_HitEffect : MonoBehaviour
 {
+    [SerializeField] GameObject MoveEffect;
+
+    Animator MoveEffectAnimator;
+    bool last = false;
+    float timer;
+    float animTime = 0.5f;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        MoveEffectAnimator = MoveEffect.GetComponent<Animator>();
+
+        MoveEffect.SetActive(false);
+
+        timer = animTime;
     }
 
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
+
         // エフェクトお試し生成
         if (Keyboard.current.digit0Key.wasReleasedThisFrame)
         {
@@ -29,6 +43,33 @@ public class fugu_HitEffect : MonoBehaviour
         {
             this.gameObject.GetComponent<EffectPrefabManager>().EffectNumON(2);
         }
+
+        if (Keyboard.current.mKey.wasReleasedThisFrame)
+        {
+            SetMoveEffect();
+        }
+        if (Keyboard.current.oKey.wasReleasedThisFrame)
+        {
+            SetMoveEffectAnimatorLastTrigger();
+        }
+#endif
+
+
+        // エフェクト消滅タイマー処理
+        if (last)
+        {
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                MoveEffect.SetActive(false);
+
+                timer = animTime;
+                last = false;
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -40,5 +81,21 @@ public class fugu_HitEffect : MonoBehaviour
             this.gameObject.transform.GetChild(0).GetComponent<EffectPrefab>().SetEffectPosition(point);
             this.gameObject.transform.GetChild(0).GetComponent<EffectPrefab>().EffectON();
         }
+    }
+
+
+    public void SetMoveEffect()
+    {
+        if (MoveEffect.activeSelf) return;
+
+        MoveEffect.SetActive(true);
+    }
+
+
+    public void SetMoveEffectAnimatorLastTrigger()
+    {
+        MoveEffectAnimator.SetTrigger("last");
+
+        last = true;
     }
 }
