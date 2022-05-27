@@ -259,6 +259,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2917607536054288060, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
   m_PrefabInstance: {fileID: 509724627}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &614135882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 873127002267814941, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
+  m_PrefabInstance: {fileID: 813666291}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2de18b5da5e5746ba21cf1e4fdcf8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &813666291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -491,7 +502,7 @@ PrefabInstance:
     - target: {fileID: -3986987255833316072, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
       propertyPath: timer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 614135882}
     - target: {fileID: -3986987255833316072, guid: 1094f8c5022877c4693c340db28efc52, type: 3}
       propertyPath: gameCanvas
       value: 

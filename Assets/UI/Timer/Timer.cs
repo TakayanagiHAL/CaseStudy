@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] Text text;
+    //[SerializeField] Text text;
     [SerializeField] Image num100;
     [SerializeField] Image num10;
     [SerializeField] Image num1;
@@ -13,9 +13,9 @@ public class Timer : MonoBehaviour
     [SerializeField] Image num_01;
 
     [SerializeField] Sprite[] number;
-
-    bool activeTimer = true;
+ 
     public float time;
+    public bool timerOn = true;
     private int IntTime;
     private string StringInt;
     private int DecimalTime;
@@ -37,14 +37,12 @@ public class Timer : MonoBehaviour
     void Start()
     {
         time = 0;
-
-        text.text = time.ToString("f2");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (activeTimer)
+        if (timerOn)
         {
             if (time < 1000.0f)
             {
@@ -63,13 +61,11 @@ public class Timer : MonoBehaviour
                 num_1.sprite = number[int.Parse(StringDecimal[0].ToString())];
                 num_01.sprite = number[int.Parse(StringDecimal[1].ToString())];
             }
-
-            text.text = time.ToString("f2");
         }
     }
 
     private void OnGameStateChanged(GAME_STATE newGameState)
     {
-        activeTimer = newGameState == GAME_STATE.GAMEPLAY;
+        timerOn = newGameState == GAME_STATE.GAMEPLAY;
     }
 }

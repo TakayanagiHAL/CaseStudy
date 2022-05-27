@@ -17,7 +17,7 @@ public class player : MonoBehaviour
     [SerializeField] Animator kurage_anim;
 
     [SerializeField] GameObject[] chargeEF;
-    EffectManager[] hitEF;
+    //EffectManager[] hitEF;
     [SerializeField] GameObject[] moveEF;
 
     PlayerInput input;

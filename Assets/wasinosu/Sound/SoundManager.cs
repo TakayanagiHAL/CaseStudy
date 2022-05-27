@@ -165,6 +165,7 @@ public class SoundManager : MonoBehaviour
         var audioSource = GetUnusedBGMAudioSource();
         if (audioSource == null) return; //再生できませんでした
         audioSource.clip = clip;
+        audioSource.loop = true;
         audioSource.Play();
     }
 
