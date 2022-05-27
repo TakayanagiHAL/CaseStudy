@@ -34,6 +34,8 @@ public class GoalManagement : MonoBehaviour
             gameManagement.bools[0] = false;
             gameManagement.bools[1] = true;
 
+            SoundManager.instance.PlayBGM("クリア");
+
             //　ゲームクリア
             GameStateManager.Instance.SetState(GAME_STATE.GAMEEND);
         }
