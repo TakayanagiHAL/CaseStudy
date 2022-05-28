@@ -354,7 +354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2de18b5da5e5746ba21cf1e4fdcf8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
   num100: {fileID: 3243549361922975121}
   num10: {fileID: 3243549361453477014}
   num1: {fileID: 3243549361738985944}
@@ -371,6 +370,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e50652fac10edd041b65ada2e28cfa3f, type: 3}
   - {fileID: 21300000, guid: f25b31e79c66a364caf26b1f3e0d154c, type: 3}
   - {fileID: 21300000, guid: d66851e9e8019f341beef44881d7b5b1, type: 3}
+  time: 0
+  timerOn: 0
 --- !u!1 &3243549362658035940
 GameObject:
   m_ObjectHideFlags: 0
