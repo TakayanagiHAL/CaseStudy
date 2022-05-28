@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8526544009693718723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2679546148898096230}
+  - component: {fileID: 6386777048319510852}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2679546148898096230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526544009693718723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6386777048319510852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526544009693718723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0685f18436fd84841a5d2e843844542e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGM_Datas:
+  - BGM_Name: "\u30BF\u30A4\u30C8\u30EB"
+    BGM_Clip: {fileID: 8300000, guid: bb4b5baddecf54b41ba6257f83cc1d78, type: 3}
+  - BGM_Name: "\u30E1\u30A4\u30F3"
+    BGM_Clip: {fileID: 8300000, guid: 5ee03e3413efbdc4a87aee59bf04ca47, type: 3}
+  - BGM_Name: "\u30BB\u30EC\u30AF\u30C8"
+    BGM_Clip: {fileID: 8300000, guid: 6364a5c33ee3e1f4e89159c53f4ef0de, type: 3}
+  - BGM_Name: "\u30AF\u30EA\u30A2"
+    BGM_Clip: {fileID: 8300000, guid: 85436d0db28018043bc4d4e8f7672d4f, type: 3}
+  SE_Datas:
+  - SE_Name: "\u30AF\u30E9\u30B2\u30D2\u30C3\u30C8"
+    SE_Clip: {fileID: 8300000, guid: fa5be29092405074fa47d66f5392be97, type: 3}
+  - SE_Name: "\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC"
+    SE_Clip: {fileID: 8300000, guid: fa5475bb3ef0d664ba694ef50c38502e, type: 3}
+  - SE_Name: "\u30AB\u30A6\u30F3\u30C8\u30C0\u30A6\u30F3"
+    SE_Clip: {fileID: 8300000, guid: 17e08012406425c46be1891c3e6dc4ba, type: 3}
+  - SE_Name: "\u30D5\u30B0\u30CF\u30EA\u30BB\u30F3"
+    SE_Clip: {fileID: 8300000, guid: cf6386ca487a7d24c9d39853038c3c4c, type: 3}
+  - SE_Name: "\u30AF\u30EA\u30C3\u30AF"
+    SE_Clip: {fileID: 8300000, guid: 1294c70abda926249a4fa86d1b3b4d74, type: 3}
+  - SE_Name: "\u56DE\u5FA9"
+    SE_Clip: {fileID: 8300000, guid: 0fdecdb1c28c82a44b36b094a795aece, type: 3}
+  - SE_Name: "\u7834\u88C2"
+    SE_Clip: {fileID: 8300000, guid: 97d5438e58f95c44fbc2de51b8430ad7, type: 3}
+  - SE_Name: "\u6D77\u6D41"
+    SE_Clip: {fileID: 8300000, guid: 67cda172d52a1bf4298d200bf7b7ec20, type: 3}
+  BGM_Volume: 0.1
+  SE_Volume: 0.1
+  Mute: 0
