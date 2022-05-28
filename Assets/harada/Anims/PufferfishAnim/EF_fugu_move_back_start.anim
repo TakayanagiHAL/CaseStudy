@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EF_hugu_move_back
+  m_Name: EF_fugu_move_back_start
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -33,16 +33,6 @@ AnimationClip:
       value: {fileID: 475360875493314371, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
     - time: 0.5
       value: {fileID: -2449208768165949129, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - time: 0.5833333
-      value: {fileID: -2579995288048993362, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - time: 0.6666667
-      value: {fileID: -4763120014507961872, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - time: 0.75
-      value: {fileID: 2159373732560507285, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - time: 0.8333333
-      value: {fileID: 8561539527266214016, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - time: 0.9166667
-      value: {fileID: 1713752856099786017, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -69,22 +59,17 @@ AnimationClip:
     - {fileID: -5012259184606039162, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
     - {fileID: 475360875493314371, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
     - {fileID: -2449208768165949129, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - {fileID: -2579995288048993362, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - {fileID: -4763120014507961872, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - {fileID: 2159373732560507285, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - {fileID: 8561539527266214016, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
-    - {fileID: 1713752856099786017, guid: 6d36c36608cebcf499344742ea93181f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.5833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
