@@ -341,7 +341,7 @@ PrefabInstance:
       objectReference: {fileID: 813666292}
     - target: {fileID: 8199442434995674779, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
       propertyPath: useMouse
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8199442434995674779, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
       propertyPath: impactPower
