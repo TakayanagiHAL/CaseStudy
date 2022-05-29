@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321e51bc51e64ba4183bd284775db7f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoveEffect: {fileID: 8607795416108399769}
 --- !u!1 &8911465241951476548
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,10 +58,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790ab01bec3f1a040a8945bde2fc8912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fugu_sprite: {fileID: 993888940524547134}
   delta: 0
   isHorizon: 0
   moveSpeed: 0
-  isVector: 0
+  isStartVector: 0
+  isChangeVector: 0
 --- !u!61 &7243820162665203487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -87,6 +90,76 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.751017, y: 7.925331}
   m_EdgeRadius: 0
+--- !u!1001 &257976095218460896
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 993888940524547133}
+    m_Modifications:
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766463878007486929, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422166397872346233, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+      propertyPath: m_Name
+      value: EF_fugu_move_front
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+--- !u!1 &8607795416108399769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8422166397872346233, guid: d322aeef165783e42868e9fb06da7fb8, type: 3}
+  m_PrefabInstance: {fileID: 257976095218460896}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4360759608531522482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96,7 +169,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2888806863774402150, guid: 1b0b4099d05f84648ae04c4dbba903e1, type: 3}
       propertyPath: m_Name
-      value: EF_hugu_hit
+      value: EF_fugu_hit
       objectReference: {fileID: 0}
     - target: {fileID: 2888806863774402150, guid: 1b0b4099d05f84648ae04c4dbba903e1, type: 3}
       propertyPath: m_IsActive
@@ -108,11 +181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9112344515116352233, guid: 1b0b4099d05f84648ae04c4dbba903e1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9112344515116352233, guid: 1b0b4099d05f84648ae04c4dbba903e1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9112344515116352233, guid: 1b0b4099d05f84648ae04c4dbba903e1, type: 3}
       propertyPath: m_LocalPosition.x
