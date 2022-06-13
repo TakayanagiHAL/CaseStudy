@@ -78,7 +78,7 @@ public class fugu_HitEffect : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Vector3 point = collision.GetContact(0).point;
-
+            SoundManager.instance.PlaySE("フグハリセン");
             this.gameObject.transform.GetChild(0).GetComponent<EffectPrefab>().SetEffectPosition(point);
             this.gameObject.transform.GetChild(0).GetComponent<EffectPrefab>().EffectON();
         }

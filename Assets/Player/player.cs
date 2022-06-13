@@ -32,6 +32,8 @@ public class player : MonoBehaviour
 
     private void Awake()
     {
+        Rigidbody2D = GetComponent<Rigidbody2D>();
+        input = GetComponent<PlayerInput>();
         // Subscribe to the gamestate manager
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
@@ -42,13 +44,10 @@ public class player : MonoBehaviour
         GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 
+
     // Start is called before the first frame update
     void Start()
     {
-        Rigidbody2D = GetComponent<Rigidbody2D>();
-
-        input = GetComponent<PlayerInput>();
-
         var actionMap = input.currentActionMap;
 
         rotateR = actionMap["RotateRight"];
@@ -154,6 +153,8 @@ public class player : MonoBehaviour
 
         this.gameObject.transform.GetChild(3).GetComponent<EffectPrefab>().EffectON();
 
+        SoundManager.instance.PlaySE("ƒNƒ‰ƒQƒqƒbƒg");
+
         Debug.Log("Inpact");
     }
 
@@ -162,6 +163,7 @@ public class player : MonoBehaviour
         if(collision.gameObject.tag == "Damage")
         {
             lifeUI.LifeDown();
+            SoundManager.instance.PlaySE("”j—ô");
         }
     }
 
@@ -170,6 +172,7 @@ public class player : MonoBehaviour
         if (collision.gameObject.tag == "Hoimi")
         {
             lifeUI.LifeUp();
+            SoundManager.instance.PlaySE("‰ñ•œ");
         }
     }
 
@@ -179,12 +182,13 @@ public class player : MonoBehaviour
         if (newGameState != GAME_STATE.GAMEPLAY)
         {
             Rigidbody2D.simulated = false;
+            enabled = false;
         }
         else
         {
+            enabled = true;
             Rigidbody2D.simulated = true;
         }
 
-        enabled = newGameState == GAME_STATE.GAMEPLAY;        
     }
 }
