@@ -25,6 +25,7 @@ public class OceanicCurrent : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            SoundManager.instance.PlaySE("ŠC—¬");
             playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
 
             playerRB.AddForce(OceanCurrentDir);
