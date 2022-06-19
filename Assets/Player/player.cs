@@ -17,7 +17,7 @@ public class player : MonoBehaviour
     [SerializeField] Animator kurage_anim;
 
     [SerializeField] GameObject[] chargeEF;
-    //EffectManager[] hitEF;
+    [SerializeField] GameObject[] hitEF;
     [SerializeField] GameObject[] moveEF;
 
     PlayerInput input;
@@ -58,8 +58,6 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
         if (rotateR.ReadValue<float>() > 0)
         {
             transform.RotateAroundLocal(Vector3.back, rotateSpeed);
@@ -147,11 +145,16 @@ public class player : MonoBehaviour
 
         kurage_anim.SetBool("Shot",false);
 
-        //hitEF[(int)((power * 5) - 1)].SetActiveEffectPrefab(true);
+        if(useMouse)
+        {
+            hitEF[0].GetComponent<EffectPrefab>().EffectON();
+        }
+        else
+        {
+            hitEF[(int)((power * 5) - 1)].GetComponent<EffectPrefab>().EffectON();
+        }
         
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
-
-        this.gameObject.transform.GetChild(3).GetComponent<EffectPrefab>().EffectON();
 
         SoundManager.instance.PlaySE("ƒNƒ‰ƒQƒqƒbƒg");
 
