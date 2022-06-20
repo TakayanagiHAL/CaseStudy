@@ -58,6 +58,35 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
+
+        // エフェクトお試し生成
+        if (Keyboard.current.digit3Key.wasReleasedThisFrame)
+        {
+            chargeEF[0].SetActive(true);
+        }
+
+        if (Keyboard.current.digit4Key.wasReleasedThisFrame)
+        {
+            chargeEF[1].SetActive(true);
+        }
+
+        if (Keyboard.current.digit5Key.wasReleasedThisFrame)
+        {
+            chargeEF[2].SetActive(true);
+        }
+
+        if (Keyboard.current.digit6Key.wasReleasedThisFrame)
+        {
+            chargeEF[3].SetActive(true);
+        }
+        if (Keyboard.current.digit7Key.wasReleasedThisFrame)
+        {
+            chargeEF[4].SetActive(true);
+        }
+#endif
+
+
         if (rotateR.ReadValue<float>() > 0)
         {
             transform.RotateAroundLocal(Vector3.back, rotateSpeed);
