@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class fugu : MonoBehaviour
 {
+    [SerializeField] GameObject fugu_sprite;
     [SerializeField] float delta;
     [SerializeField] bool isHorizon;
     [SerializeField] float moveSpeed;
@@ -33,15 +34,15 @@ public class fugu : MonoBehaviour
 
         animator = this.GetComponentInChildren<Animator>();
 
-        tempScaleX = transform.localScale.x;
+        tempScaleX = fugu_sprite.transform.localScale.x;
 
         if (isStartVector)
         {
-            transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
+            fugu_sprite.transform.localScale = new Vector3(-tempScaleX, fugu_sprite.transform.localScale.y, fugu_sprite.transform.localScale.z);
         }
         else
         {
-            transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
+            fugu_sprite.transform.localScale = new Vector3(tempScaleX, fugu_sprite.transform.localScale.y, fugu_sprite.transform.localScale.z);
         }
     }
 
@@ -63,11 +64,20 @@ public class fugu : MonoBehaviour
         {
             if (Mathf.Cos(count) > 0)
             {
-                transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
+                fugu_sprite.transform.localScale = new Vector3(-tempScaleX, fugu_sprite.transform.localScale.y, fugu_sprite.transform.localScale.z);
             }
             else
             {
-                transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
+                fugu_sprite.transform.localScale = new Vector3(tempScaleX, fugu_sprite.transform.localScale.y, fugu_sprite.transform.localScale.z);
+            }
+
+            if ((Mathf.Sin(count) >= 0 && Mathf.Cos(count) < 0) || (Mathf.Sin(count) < 0 && Mathf.Cos(count) >= 0))
+            {
+                this.gameObject.transform.GetChild(0).GetComponent<fugu_HitEffect>().SetMoveEffect();
+            }
+            else
+            {
+                this.gameObject.transform.GetChild(0).GetComponent<fugu_HitEffect>().SetMoveEffectAnimatorLastTrigger();
             }
         }
 
