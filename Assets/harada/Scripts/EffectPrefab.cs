@@ -18,7 +18,7 @@ public class EffectPrefab : MonoBehaviour
         // アニメーション時間を取得
         animTime = this.gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0].clip.length;
         timer = animTime;
-        Debug.Log(animTime);
+        //Debug.Log(animTime);
 
         //this.gameObject.SetActive(false);
     }
