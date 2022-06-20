@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class EffectPrefab : MonoBehaviour
 {
-    bool NoChase;
+    bool noChase = false;
+    bool lockRotate = false;
     float timer;
     float animTime;
     Vector3 noChasePosition;
+    Vector3 lockRotation;
 
 
     // Start is called before the first frame update
@@ -18,7 +20,7 @@ public class EffectPrefab : MonoBehaviour
         timer = animTime;
         Debug.Log(animTime);
 
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,10 +41,16 @@ public class EffectPrefab : MonoBehaviour
             }
         }
 
-        // NoChaseÇ™trueÇ»ÇÁtransformÇÃç¿ïWÇ…í«è]Ç∑ÇÈ
-        if (NoChase && noChasePosition != null)
+        // noChaseÇ™trueÇ»ÇÁtransformÇÃç¿ïWÇ…í«è]Ç∑ÇÈ
+        if (noChase && noChasePosition != null)
         {
             this.gameObject.transform.position = noChasePosition;
+        }
+
+        // lockRotateÇ™trueÇ»ÇÁlockRotationÇ≈âÒì]ç¿ïWÇå≈íËÇ∑ÇÈ
+        if (lockRotate)
+        {
+            this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
@@ -55,8 +63,16 @@ public class EffectPrefab : MonoBehaviour
 
     public void SetEffectPosition(Vector3 setVector)
     {
-        NoChase = true;
+        noChase = true;
 
         noChasePosition = setVector;
+    }
+
+
+    public void SetEffectRotation()
+    {
+        lockRotate = true;
+
+        //lockRotation = setVector;
     }
 }

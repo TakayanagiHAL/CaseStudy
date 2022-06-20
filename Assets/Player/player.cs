@@ -19,6 +19,7 @@ public class player : MonoBehaviour
     [SerializeField] GameObject[] chargeEF;
     [SerializeField] GameObject[] hitEF;
     [SerializeField] GameObject[] moveEF;
+    [SerializeField] GameObject bubbleRecoveryEF;
 
     PlayerInput input;
 
@@ -83,6 +84,12 @@ public class player : MonoBehaviour
         if (Keyboard.current.digit7Key.wasReleasedThisFrame)
         {
             chargeEF[4].SetActive(true);
+        }
+
+        if (Keyboard.current.rKey.wasReleasedThisFrame)
+        {
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
         }
 #endif
 
@@ -203,6 +210,9 @@ public class player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Hoimi")
         {
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
+
             lifeUI.LifeUp();
             SoundManager.instance.PlaySE("‰ñ•œ");
         }
