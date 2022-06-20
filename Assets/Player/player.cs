@@ -19,6 +19,7 @@ public class player : MonoBehaviour
     [SerializeField] GameObject[] chargeEF;
     [SerializeField] GameObject[] hitEF;
     [SerializeField] GameObject[] moveEF;
+    [SerializeField] GameObject bubbleRecoveryEF;
 
     PlayerInput input;
 
@@ -58,6 +59,41 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
+
+        // エフェクトお試し生成
+        if (Keyboard.current.digit3Key.wasReleasedThisFrame)
+        {
+            chargeEF[0].SetActive(true);
+        }
+
+        if (Keyboard.current.digit4Key.wasReleasedThisFrame)
+        {
+            chargeEF[1].SetActive(true);
+        }
+
+        if (Keyboard.current.digit5Key.wasReleasedThisFrame)
+        {
+            chargeEF[2].SetActive(true);
+        }
+
+        if (Keyboard.current.digit6Key.wasReleasedThisFrame)
+        {
+            chargeEF[3].SetActive(true);
+        }
+        if (Keyboard.current.digit7Key.wasReleasedThisFrame)
+        {
+            chargeEF[4].SetActive(true);
+        }
+
+        if (Keyboard.current.rKey.wasReleasedThisFrame)
+        {
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
+        }
+#endif
+
+
         if (rotateR.ReadValue<float>() > 0)
         {
             transform.RotateAroundLocal(Vector3.back, rotateSpeed);
@@ -174,6 +210,9 @@ public class player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Hoimi")
         {
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
+
             lifeUI.LifeUp();
             SoundManager.instance.PlaySE("回復");
         }

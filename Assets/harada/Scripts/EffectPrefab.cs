@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class EffectPrefab : MonoBehaviour
 {
-    bool NoChase;
+    bool noChase = false;
+    bool lockRotate = false;
     float timer;
     float animTime;
     Vector3 noChasePosition;
+    Vector3 lockRotation;
 
 
     // Start is called before the first frame update
@@ -16,9 +18,9 @@ public class EffectPrefab : MonoBehaviour
         // アニメーション時間を取得
         animTime = this.gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0].clip.length;
         timer = animTime;
-        Debug.Log(animTime);
+        //Debug.Log(animTime);
 
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,10 +41,16 @@ public class EffectPrefab : MonoBehaviour
             }
         }
 
-        // NoChaseがtrueならtransformの座標に追従する
-        if (NoChase && noChasePosition != null)
+        // noChaseがtrueならtransformの座標に追従する
+        if (noChase && noChasePosition != null)
         {
             this.gameObject.transform.position = noChasePosition;
+        }
+
+        // lockRotateがtrueならlockRotationで回転座標を固定する
+        if (lockRotate)
+        {
+            this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
@@ -55,8 +63,16 @@ public class EffectPrefab : MonoBehaviour
 
     public void SetEffectPosition(Vector3 setVector)
     {
-        NoChase = true;
+        noChase = true;
 
         noChasePosition = setVector;
+    }
+
+
+    public void SetEffectRotation()
+    {
+        lockRotate = true;
+
+        //lockRotation = setVector;
     }
 }
