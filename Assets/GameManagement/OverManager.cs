@@ -7,6 +7,7 @@ public class OverManager : MonoBehaviour
     lifeUI lifeUI;
     GameManagement gameManagement;
     [SerializeField] float delay;
+    bool isSE = true;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,11 @@ public class OverManager : MonoBehaviour
                 gameManagement.bools[0] = false;
                 gameManagement.bools[2] = true;
                 GameStateManager.Instance.SetState(GAME_STATE.GAMEEND);
+                if (isSE)
+                {
+                    SoundManager.instance.PlaySE("ゲームオーバー");
+                    isSE = false;
+                }
             }
         }
     }

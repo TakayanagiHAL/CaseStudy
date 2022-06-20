@@ -13,11 +13,13 @@ public class SceneTransitionFromDatabase : MonoBehaviour
 
     public void FadeToStage()
     {
+        SoundManager.instance.PlaySE("クリック");
         StartCoroutine(FadeTo());
     }
 
     public void Restart()
     {
+        SoundManager.instance.PlaySE("クリック");
         StartCoroutine(FadeToRestart());
     }
 

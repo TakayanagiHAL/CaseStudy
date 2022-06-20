@@ -197,8 +197,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2732739892300811980}
-        m_TargetAssemblyTypeName: SceneTransitionNextFromDatabase, Assembly-CSharp
-        m_MethodName: FadeToNext
+        m_TargetAssemblyTypeName: SceneTransitionFromDatabase, Assembly-CSharp
+        m_MethodName: FadeToStage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -217,10 +217,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 542259329145378157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5a92ce9051d25646b84f9838446374e, type: 3}
+  m_Script: {fileID: 11500000, guid: 43254c31f0833694d9ff3bc0a3b72180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneDatabase: {fileID: 11400000, guid: d51ba89c5c6a312498c9fd70acf03bbe, type: 2}
+  moveToSceneType: 0
   fadeAnimator: {fileID: 6084334674045543956}
 --- !u!1 &542259329154243174
 GameObject:
@@ -233,6 +234,7 @@ GameObject:
   - component: {fileID: 542259329154243175}
   - component: {fileID: 542259329154243161}
   - component: {fileID: 8348265221335523692}
+  - component: {fileID: 8188852573403692949}
   m_Layer: 5
   m_Name: RankValue
   m_TagString: Untagged
@@ -297,6 +299,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8188852573403692949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542259329154243174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b226f983a708d5d4b966f7f96d3d300e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ranks:
+  - {fileID: 21300000, guid: 0caf89236b66031459a34be13479f7ed, type: 3}
+  - {fileID: 21300000, guid: 0416db53a9437074598fa216671d1bac, type: 3}
+  - {fileID: 21300000, guid: 92e8d091948c5db45a9e900b164132b7, type: 3}
+  - {fileID: 21300000, guid: 9433948022a4e1d4680110bb82400c35, type: 3}
 --- !u!1 &542259329254242029
 GameObject:
   m_ObjectHideFlags: 0
