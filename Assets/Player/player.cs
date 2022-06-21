@@ -221,6 +221,7 @@ public class player : MonoBehaviour
     // Listen for the gamestate event
     private void OnGameStateChanged(GAME_STATE newGameState)
     {
+        Debug.Log("Gamestate Start");
         if (newGameState != GAME_STATE.GAMEPLAY)
         {
             Rigidbody2D.simulated = false;
@@ -230,6 +231,17 @@ public class player : MonoBehaviour
         {
             enabled = true;
             Rigidbody2D.simulated = true;
+        }
+
+        if (newGameState == GAME_STATE.GAMESTART)
+        {
+            Debug.Log("Input false");
+            input.enabled = false;
+        }
+        else if(newGameState == GAME_STATE.GAMEPLAY)
+        {
+            Debug.Log("Input true");
+            input.enabled = true;
         }
 
     }
