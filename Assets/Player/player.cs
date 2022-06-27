@@ -17,8 +17,9 @@ public class player : MonoBehaviour
     [SerializeField] Animator kurage_anim;
 
     [SerializeField] GameObject[] chargeEF;
-    //EffectManager[] hitEF;
+    [SerializeField] GameObject[] hitEF;
     [SerializeField] GameObject[] moveEF;
+    [SerializeField] GameObject bubbleRecoveryEF;
 
     PlayerInput input;
 
@@ -58,7 +59,40 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+#if UNITY_EDITOR
+
+        // エフェクトお試し生成
+        if (Keyboard.current.digit3Key.wasReleasedThisFrame)
+        {
+            chargeEF[0].SetActive(true);
+        }
+
+        if (Keyboard.current.digit4Key.wasReleasedThisFrame)
+        {
+            chargeEF[1].SetActive(true);
+        }
+
+        if (Keyboard.current.digit5Key.wasReleasedThisFrame)
+        {
+            chargeEF[2].SetActive(true);
+        }
+
+        if (Keyboard.current.digit6Key.wasReleasedThisFrame)
+        {
+            chargeEF[3].SetActive(true);
+        }
+        if (Keyboard.current.digit7Key.wasReleasedThisFrame)
+        {
+            chargeEF[4].SetActive(true);
+        }
+
+        if (Keyboard.current.rKey.wasReleasedThisFrame)
+        {
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
+        }
+#endif
+
 
         if (rotateR.ReadValue<float>() > 0)
         {
@@ -147,11 +181,16 @@ public class player : MonoBehaviour
 
         kurage_anim.SetBool("Shot",false);
 
-        //hitEF[(int)((power * 5) - 1)].SetActiveEffectPrefab(true);
+        if(useMouse)
+        {
+            hitEF[0].GetComponent<EffectPrefab>().EffectON();
+        }
+        else
+        {
+            hitEF[(int)((power * 5) - 1)].GetComponent<EffectPrefab>().EffectON();
+        }
         
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
-
-        this.gameObject.transform.GetChild(3).GetComponent<EffectPrefab>().EffectON();
 
         SoundManager.instance.PlaySE("クラゲヒット");
 
@@ -171,6 +210,9 @@ public class player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Hoimi")
         {
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
+
             lifeUI.LifeUp();
             SoundManager.instance.PlaySE("回復");
         }
@@ -179,6 +221,7 @@ public class player : MonoBehaviour
     // Listen for the gamestate event
     private void OnGameStateChanged(GAME_STATE newGameState)
     {
+        Debug.Log("Gamestate Start");
         if (newGameState != GAME_STATE.GAMEPLAY)
         {
             Rigidbody2D.simulated = false;
@@ -188,6 +231,17 @@ public class player : MonoBehaviour
         {
             enabled = true;
             Rigidbody2D.simulated = true;
+        }
+
+        if (newGameState == GAME_STATE.GAMESTART)
+        {
+            Debug.Log("Input false");
+            input.enabled = false;
+        }
+        else if(newGameState == GAME_STATE.GAMEPLAY)
+        {
+            Debug.Log("Input true");
+            input.enabled = true;
         }
 
     }
