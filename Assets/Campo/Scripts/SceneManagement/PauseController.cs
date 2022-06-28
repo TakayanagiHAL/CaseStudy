@@ -13,15 +13,21 @@ public class PauseController : MonoBehaviour
     {
 
         input = FindObjectOfType<PlayerInput>();
-
         var actionMap = input.currentActionMap;
 
         pause = actionMap["Pause"];
     }
     void Update()
     {
+        if (pause == null)
+        {
+            var actionMap = input.currentActionMap;
+
+            pause = actionMap["Pause"];
+        }
         if (pause.triggered && GameStateManager.Instance.CurrentGameState != GAME_STATE.GAMEEND)
         {
+
             GAME_STATE currentGameState = GameStateManager.Instance.CurrentGameState;
             GAME_STATE newGameState = currentGameState == GAME_STATE.GAMEPLAY
                 ? GAME_STATE.PAUSE 

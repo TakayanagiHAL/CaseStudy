@@ -373,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8199442434995674779, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
       propertyPath: impactPower
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8199442434995674779, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
       propertyPath: rotateSpeed
@@ -578,19 +578,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2976993244214581069, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2976993244214581069, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.9127451
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2976993245364180717, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2976993245364180717, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.91879326
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3006806334409671859, guid: f07ddb09b2cf2ac4f823baac9c5e6aa4, type: 3}
       propertyPath: moveToSceneType
