@@ -59,7 +59,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
 
         // エフェクトお試し生成
         if (Keyboard.current.digit3Key.wasReleasedThisFrame)
@@ -91,7 +91,8 @@ public class player : MonoBehaviour
             bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
             bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
         }
-#endif
+        
+#endif */
 
 
         if (rotateR.ReadValue<float>() > 0)
