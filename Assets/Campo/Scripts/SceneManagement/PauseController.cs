@@ -14,14 +14,15 @@ public class PauseController : MonoBehaviour
 
         input = FindObjectOfType<PlayerInput>();
         var actionMap = input.currentActionMap;
+        if(actionMap != null) pause = actionMap["Pause"];
 
-        pause = actionMap["Pause"];
     }
     void Update()
     {
         if (pause == null)
         {
             var actionMap = input.currentActionMap;
+            if(actionMap == null) return;
 
             pause = actionMap["Pause"];
         }
