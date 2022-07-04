@@ -16,6 +16,11 @@ public class player : MonoBehaviour
     [SerializeField] lifeUI lifeUI;
     [SerializeField] Animator kurage_anim;
 
+    [SerializeField] GameObject[] chargeEF;
+    [SerializeField] GameObject[] hitEF;
+    [SerializeField] GameObject[] moveEF;
+    [SerializeField] GameObject bubbleRecoveryEF;
+
     PlayerInput input;
 
     InputAction rotateR, rotateL,Triger;
@@ -25,16 +30,26 @@ public class player : MonoBehaviour
     public float power =0;
 
     Rigidbody2D Rigidbody2D;
+
+    private void Awake()
+    {
+        Rigidbody2D = GetComponent<Rigidbody2D>();
+        input = GetComponent<PlayerInput>();
+        // Subscribe to the gamestate manager
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDestroy()
+    {
+        // Unsubscribe to the gamestate manager to prevent memory leaks
+        GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
-        Rigidbody2D = GetComponent<Rigidbody2D>();
-
-        input = GetComponent<PlayerInput>();
-
         var actionMap = input.currentActionMap;
-
-        
 
         rotateR = actionMap["RotateRight"];
         rotateL = actionMap["RotateLeft"];
@@ -44,18 +59,64 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
+
+        // エフェクトお試し生成
+        if (Keyboard.current.digit3Key.wasReleasedThisFrame)
+        {
+            chargeEF[0].SetActive(true);
+        }
+
+        if (Keyboard.current.digit4Key.wasReleasedThisFrame)
+        {
+            chargeEF[1].SetActive(true);
+        }
+
+        if (Keyboard.current.digit5Key.wasReleasedThisFrame)
+        {
+            chargeEF[2].SetActive(true);
+        }
+
+        if (Keyboard.current.digit6Key.wasReleasedThisFrame)
+        {
+            chargeEF[3].SetActive(true);
+        }
+        if (Keyboard.current.digit7Key.wasReleasedThisFrame)
+        {
+            chargeEF[4].SetActive(true);
+        }
+
+        if (Keyboard.current.rKey.wasReleasedThisFrame)
+        {
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
+        }
+#endif
+
+
         if (rotateR.ReadValue<float>() > 0)
         {
             transform.RotateAroundLocal(Vector3.back, rotateSpeed);
 
-            Debug.Log("input rotateR");
-        }
+            moveEF[0].SetActive(true);
 
-        if (rotateL.ReadValue<float>() > 0)
+            moveEF[1].SetActive(false);
+
+            Debug.Log("input rotateR");
+        }else if (rotateL.ReadValue<float>() > 0)
         {
             transform.RotateAroundLocal(Vector3.back, -rotateSpeed);
 
+            moveEF[1].SetActive(true);
+            moveEF[0].SetActive(false);
             Debug.Log("input rotateL");
+        }
+        else
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                moveEF[i].SetActive(false);
+            }
         }
 
         if (useMouse)
@@ -64,7 +125,7 @@ public class player : MonoBehaviour
             Vector2 MousePos = mouse.position.ReadValue();
             MousePos.x -= Screen.width / 2;
             MousePos.y -= Screen.height / 2;
-            Debug.Log(MousePos);
+            //Debug.Log(MousePos);
 
             transform.rotation = Quaternion.FromToRotation(Vector3.up, MousePos);
 
@@ -84,15 +145,27 @@ public class player : MonoBehaviour
         {
             if (Triger.ReadValue<float>() <= 0)
             {
-                    Inpact();
-                    power = 0.0f;
+                if (power < 0.2) return;
+                chargeEF[(int)(power * 5) - 1].SetActive(false);
+                Inpact();
+                power = 0.0f;
             }
 
             if (power < Triger.ReadValue<float>())
             {
+                if (Triger.ReadValue<float>() < 0.2) return;
                 kurage_anim.SetBool("Shot", true);
+                if (power >= 0.2)
+                {
+                    if ((int)(power * 5) != (int)(Triger.ReadValue<float>() * 10 / 2))
+                    {
+                        chargeEF[(int)(power * 5) - 1].SetActive(false);
+
+                    }
+                }
                 power = Triger.ReadValue<float>();
                 power = ((int)(power * 10 / 2)) * 0.2f;
+                chargeEF[(int)(power * 5) - 1].SetActive(true);
                 Debug.Log(power);
             }
         }
@@ -101,13 +174,25 @@ public class player : MonoBehaviour
 
     void Inpact()
     {
+        if (power < 0.2) return;
+
         Vector2 force = new Vector2(Mathf.Cos(transform.localEulerAngles.z * 3.14f / 180.0f), Mathf.Sin(transform.localEulerAngles.z * 3.14f / 180.0f));
         Rigidbody2D.AddForce(force * power * impactPower, ForceMode2D.Impulse);
 
         kurage_anim.SetBool("Shot",false);
 
-        // 泡のエフェクト再生
+        if(useMouse)
+        {
+            hitEF[0].GetComponent<EffectPrefab>().EffectON();
+        }
+        else
+        {
+            hitEF[(int)((power * 5) - 1)].GetComponent<EffectPrefab>().EffectON();
+        }
+        
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
+
+        SoundManager.instance.PlaySE("クラゲヒット");
 
         Debug.Log("Inpact");
     }
@@ -117,6 +202,7 @@ public class player : MonoBehaviour
         if(collision.gameObject.tag == "Damage")
         {
             lifeUI.LifeDown();
+            SoundManager.instance.PlaySE("破裂");
         }
     }
 
@@ -124,9 +210,39 @@ public class player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Hoimi")
         {
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
+            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
+
             lifeUI.LifeUp();
+            SoundManager.instance.PlaySE("回復");
         }
     }
 
+    // Listen for the gamestate event
+    private void OnGameStateChanged(GAME_STATE newGameState)
+    {
+        Debug.Log("Gamestate Start");
+        if (newGameState != GAME_STATE.GAMEPLAY)
+        {
+            Rigidbody2D.simulated = false;
+            enabled = false;
+        }
+        else
+        {
+            enabled = true;
+            Rigidbody2D.simulated = true;
+        }
 
+        if (newGameState == GAME_STATE.GAMESTART)
+        {
+            Debug.Log("Input false");
+            input.enabled = false;
+        }
+        else if(newGameState == GAME_STATE.GAMEPLAY)
+        {
+            Debug.Log("Input true");
+            input.enabled = true;
+        }
+
+    }
 }

@@ -71,10 +71,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790ab01bec3f1a040a8945bde2fc8912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fugu_sprite: {fileID: 0}
   delta: 0
   isHorizon: 0
   moveSpeed: 0
-  isVector: 0
+  isStartVector: 0
+  isChangeVector: 0
 --- !u!61 &2989057109689184762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111,6 +113,10 @@ PrefabInstance:
     - target: {fileID: 4352725913605062949, guid: d636bc5f6bf23174ab42d2921379efa6, type: 3}
       propertyPath: m_Name
       value: Porcupinefish_idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352725913605062949, guid: d636bc5f6bf23174ab42d2921379efa6, type: 3}
+      propertyPath: m_TagString
+      value: Damage
       objectReference: {fileID: 0}
     - target: {fileID: 4628444679725731581, guid: d636bc5f6bf23174ab42d2921379efa6, type: 3}
       propertyPath: m_RootOrder

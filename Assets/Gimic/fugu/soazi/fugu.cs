@@ -5,10 +5,12 @@ using UnityEngine.InputSystem;
 
 public class fugu : MonoBehaviour
 {
+    [SerializeField] GameObject fugu_sprite;
     [SerializeField] float delta;
     [SerializeField] bool isHorizon;
     [SerializeField] float moveSpeed;
-    [SerializeField] bool isVector;
+    [SerializeField] bool isStartVector;
+    [SerializeField] bool isChangeVector;
 
     float startPos;
     float count;
@@ -17,6 +19,7 @@ public class fugu : MonoBehaviour
     Animator animator;
 
     bool isSmalling = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,15 +34,15 @@ public class fugu : MonoBehaviour
 
         animator = this.GetComponentInChildren<Animator>();
 
-        tempScaleX = transform.localScale.x;
+        tempScaleX = fugu_sprite.transform.localScale.x;
 
-        if (isVector)
+        if (isStartVector)
         {
-            transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
+            fugu_sprite.transform.localScale = new Vector3(-tempScaleX, fugu_sprite.transform.localScale.y, fugu_sprite.transform.localScale.z);
         }
         else
         {
-            transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
+            fugu_sprite.transform.localScale = new Vector3(tempScaleX, fugu_sprite.transform.localScale.y, fugu_sprite.transform.localScale.z);
         }
     }
 
@@ -57,17 +60,28 @@ public class fugu : MonoBehaviour
             transform.position = new Vector3(transform.position.x, Mathf.Sin(count) * delta + startPos, transform.position.z);
         }
 
-        if(delta > 0.0f)
+        if (delta > 0.0f && isChangeVector)
         {
             if (Mathf.Cos(count) > 0)
             {
-                transform.localScale = new Vector3(-tempScaleX, transform.localScale.y, transform.localScale.z);
+                fugu_sprite.transform.localScale = new Vector3(-tempScaleX, fugu_sprite.transform.localScale.y, fugu_sprite.transform.localScale.z);
             }
             else
             {
-                transform.localScale = new Vector3(tempScaleX, transform.localScale.y, transform.localScale.z);
+                fugu_sprite.transform.localScale = new Vector3(tempScaleX, fugu_sprite.transform.localScale.y, fugu_sprite.transform.localScale.z);
+            }
+
+            if ((Mathf.Sin(count) >= 0 && Mathf.Cos(count) < 0) || (Mathf.Sin(count) < 0 && Mathf.Cos(count) >= 0))
+            {
+                this.gameObject.transform.GetChild(0).GetComponent<fugu_HitEffect>().SetMoveEffect();
+            }
+            else
+            {
+                this.gameObject.transform.GetChild(0).GetComponent<fugu_HitEffect>().SetMoveEffectAnimatorLastTrigger();
             }
         }
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
