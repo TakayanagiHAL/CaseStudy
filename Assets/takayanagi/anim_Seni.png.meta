@@ -77,6 +77,21 @@ TextureImporter:
   - first:
       213: -1410604329278354753
     second: anim_Seni_24
+  - first:
+      213: 1560205890712998453
+    second: anim_Seni_25
+  - first:
+      213: -5299132964182612092
+    second: anim_Seni_26
+  - first:
+      213: 20613582631807054
+    second: anim_Seni_27
+  - first:
+      213: 4838783107520820627
+    second: anim_Seni_28
+  - first:
+      213: 423000089273944153
+    second: anim_Seni_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -170,9 +185,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2592
+        y: 2700
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,9 +206,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 2592
+        y: 2700
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,9 +227,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 2592
+        y: 2700
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,9 +248,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2880
-        y: 2592
+        y: 2700
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,9 +269,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3840
-        y: 2592
+        y: 2700
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,9 +290,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1944
+        y: 2160
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,9 +311,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 1944
+        y: 2160
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,9 +332,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 1944
+        y: 2160
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,9 +353,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2880
-        y: 1944
+        y: 2160
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,9 +374,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3840
-        y: 1944
+        y: 2160
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,9 +395,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1296
+        y: 1620
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,9 +416,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 1296
+        y: 1620
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,9 +437,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 1296
+        y: 1620
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,9 +458,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2880
-        y: 1296
+        y: 1620
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,9 +479,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3840
-        y: 1296
+        y: 1620
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,9 +500,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 648
+        y: 1080
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,9 +521,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 648
+        y: 1080
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,9 +542,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 648
+        y: 1080
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -548,9 +563,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2880
-        y: 648
+        y: 1080
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,9 +584,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3840
-        y: 648
+        y: 1080
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -590,9 +605,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 540
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -611,9 +626,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 0
+        y: 540
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -632,9 +647,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 0
+        y: 540
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -653,9 +668,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2880
-        y: 0
+        y: 540
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -674,9 +689,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3840
-        y: 0
+        y: 540
         width: 960
-        height: 648
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -686,6 +701,111 @@ TextureImporter:
       bones: []
       spriteID: fba4cb216d68c6ce0800000000000000
       internalID: -1410604329278354753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 960
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5329b64cdf6f6a510800000000000000
+      internalID: 1560205890712998453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_26
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 960
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487255425a2b576b0800000000000000
+      internalID: -5299132964182612092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_27
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 960
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e482156b1fb394000800000000000000
+      internalID: 20613582631807054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_28
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 960
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39570fc699fc62340800000000000000
+      internalID: 4838783107520820627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_29
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 960
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958c12d075cced500800000000000000
+      internalID: 423000089273944153
       vertices: []
       indices: 
       edges: []
