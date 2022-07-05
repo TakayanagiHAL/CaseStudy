@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 90446436257451043bba06f1dc680ea0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1967105779654354612
+    second: anim_Seni_0
+  - first:
+      213: 4193721052573794350
+    second: anim_Seni_1
+  - first:
+      213: 3759975751483798583
+    second: anim_Seni_2
+  - first:
+      213: 2856674386715921502
+    second: anim_Seni_3
+  - first:
+      213: -7463207660571461086
+    second: anim_Seni_4
+  - first:
+      213: 3446781998436871179
+    second: anim_Seni_5
+  - first:
+      213: 8166530960420270893
+    second: anim_Seni_6
+  - first:
+      213: 3028080311013014581
+    second: anim_Seni_7
+  - first:
+      213: 6755227076641344487
+    second: anim_Seni_8
+  - first:
+      213: 340977369217806218
+    second: anim_Seni_9
+  - first:
+      213: -7870240113830889149
+    second: anim_Seni_10
+  - first:
+      213: 1329135636301758963
+    second: anim_Seni_11
+  - first:
+      213: -224889135599399764
+    second: anim_Seni_12
+  - first:
+      213: -2854004103449635509
+    second: anim_Seni_13
+  - first:
+      213: 1903727101857639475
+    second: anim_Seni_14
+  - first:
+      213: 1853633441133987279
+    second: anim_Seni_15
+  - first:
+      213: 412961641474462747
+    second: anim_Seni_16
+  - first:
+      213: 2222868923200258275
+    second: anim_Seni_17
+  - first:
+      213: 6505745353502875159
+    second: anim_Seni_18
+  - first:
+      213: 9046302340336013618
+    second: anim_Seni_19
+  - first:
+      213: 8351199836978916140
+    second: anim_Seni_20
+  - first:
+      213: 711560990819448078
+    second: anim_Seni_21
+  - first:
+      213: -1127116426324276361
+    second: anim_Seni_22
+  - first:
+      213: 3852354859287831755
+    second: anim_Seni_23
+  - first:
+      213: -1410604329278354753
+    second: anim_Seni_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anim_Seni_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49951037bf63b4e0800000000000000
+      internalID: -1967105779654354612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_1
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2592
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e200db9f317133a30800000000000000
+      internalID: 4193721052573794350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_2
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2592
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7343647560e1e2430800000000000000
+      internalID: 3759975751483798583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_3
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2592
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cc82b2832f4a720800000000000000
+      internalID: 2856674386715921502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_4
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2592
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22af9aaac2c5d6890800000000000000
+      internalID: -7463207660571461086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1944
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c6a0b37fd65df20800000000000000
+      internalID: 3446781998436871179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1944
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23741fe3a8555170800000000000000
+      internalID: 8166530960420270893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_7
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1944
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cf849dff6e50a20800000000000000
+      internalID: 3028080311013014581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_8
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1944
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebce484c336fbd50800000000000000
+      internalID: 6755227076641344487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_9
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1944
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8faca85c156bb400800000000000000
+      internalID: 340977369217806218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3497416905a47c290800000000000000
+      internalID: -7870240113830889149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_11
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1296
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f14414b1d9027210800000000000000
+      internalID: 1329135636301758963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_12
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1296
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacc0cec58801ecf0800000000000000
+      internalID: -224889135599399764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_13
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1296
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45906a936a8468d0800000000000000
+      internalID: -2854004103449635509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_14
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1296
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c228776b56b6a10800000000000000
+      internalID: 1903727101857639475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc583923bcd69b910800000000000000
+      internalID: 1853633441133987279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_16
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 648
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1492f9cc622bb500800000000000000
+      internalID: 412961641474462747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 648
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e04b95228739de10800000000000000
+      internalID: 2222868923200258275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_18
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 648
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71edfaa1eec094a50800000000000000
+      internalID: 6505745353502875159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_19
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 648
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23153869c0cea8d70800000000000000
+      internalID: 9046302340336013618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bad63510c65e370800000000000000
+      internalID: 8351199836978916140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_21
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0571dd73f8ffd900800000000000000
+      internalID: 711560990819448078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_22
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b0f6cf49dab50f0800000000000000
+      internalID: -1127116426324276361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_23
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4e9987550567530800000000000000
+      internalID: 3852354859287831755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_Seni_24
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba4cb216d68c6ce0800000000000000
+      internalID: -1410604329278354753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
