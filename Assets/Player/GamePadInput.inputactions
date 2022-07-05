@@ -30,7 +30,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Pose",
+                    "name": "Pause",
                     "type": "Button",
                     "id": "dec6cbe8-ab1c-4302-a77c-af03cf46cba4",
                     "expectedControlType": "Button",
@@ -101,7 +101,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pose",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -112,7 +112,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pose",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45d1d081-e489-42ff-8949-0125949060c5",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

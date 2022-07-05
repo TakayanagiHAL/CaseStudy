@@ -59,7 +59,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
 
         // エフェクトお試し生成
         if (Keyboard.current.digit3Key.wasReleasedThisFrame)
@@ -91,7 +91,8 @@ public class player : MonoBehaviour
             bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
             bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
         }
-#endif
+        
+#endif */
 
 
         if (rotateR.ReadValue<float>() > 0)
@@ -221,6 +222,7 @@ public class player : MonoBehaviour
     // Listen for the gamestate event
     private void OnGameStateChanged(GAME_STATE newGameState)
     {
+        Debug.Log("Gamestate Start");
         if (newGameState != GAME_STATE.GAMEPLAY)
         {
             Rigidbody2D.simulated = false;
@@ -230,6 +232,17 @@ public class player : MonoBehaviour
         {
             enabled = true;
             Rigidbody2D.simulated = true;
+        }
+
+        if (newGameState == GAME_STATE.GAMESTART)
+        {
+            Debug.Log("Input false");
+            input.enabled = false;
+        }
+        else if(newGameState == GAME_STATE.GAMEPLAY)
+        {
+            Debug.Log("Input true");
+            input.enabled = true;
         }
 
     }

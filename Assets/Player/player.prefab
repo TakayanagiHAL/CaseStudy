@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startRadian: 0
   rotateSpeed: 0.01
-  impactPower: 1
+  impactPower: 10
   addPowerMouse: 0.01
   lifeUI: {fileID: 0}
   kurage_anim: {fileID: 6433393744595873787}
@@ -119,7 +119,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: ef98b52e3c2be31468eef5a2a65466ad, type: 2}
@@ -951,6 +951,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1254062453443749639}
     m_Modifications:
+    - target: {fileID: 4260812761318654727, guid: 8eb9971435ac8f141913d9fb7619e7e4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.47058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260812761318654727, guid: 8eb9971435ac8f141913d9fb7619e7e4, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260812761318654727, guid: 8eb9971435ac8f141913d9fb7619e7e4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49019608
+      objectReference: {fileID: 0}
     - target: {fileID: 4260812761318654727, guid: 8eb9971435ac8f141913d9fb7619e7e4, type: 3}
       propertyPath: m_SortingOrder
       value: 5

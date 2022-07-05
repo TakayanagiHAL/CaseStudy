@@ -51,8 +51,8 @@ public class Timer : MonoBehaviour
                 DecimalTime = (int)((time - (int)time) * 100);
                 StringInt = IntTime.ToString("000");
                 StringDecimal = DecimalTime.ToString("00");
-                Debug.Log(StringInt);
-                Debug.Log(int.Parse(StringInt[0].ToString()));
+               // Debug.Log(StringInt);
+                //Debug.Log(int.Parse(StringInt[0].ToString()));
 
                 num100.sprite = number[int.Parse(StringInt[0].ToString())];
                 num10.sprite = number[int.Parse(StringInt[1].ToString())];
