@@ -246,4 +246,21 @@ public class player : MonoBehaviour
         }
 
     }
+
+    public void RotateRight()
+    {
+        transform.RotateAroundLocal(Vector3.back, rotateSpeed);
+
+        moveEF[0].SetActive(true);
+
+        moveEF[1].SetActive(false);
+    }
+
+    public void RotateLeft()
+    {
+        transform.RotateAroundLocal(Vector3.back, -rotateSpeed);
+
+        moveEF[1].SetActive(true);
+        moveEF[0].SetActive(false);
+    }
 }
