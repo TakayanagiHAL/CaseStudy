@@ -1,0 +1,1656 @@
+fileFormatVersion: 2
+guid: 6be2d13b25b9ae74894e3ad83bd56baf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -474047734961973246
+    second: ef_back_awa_0
+  - first:
+      213: 1711064832188940875
+    second: ef_back_awa_1
+  - first:
+      213: 5960055433078187699
+    second: ef_back_awa_2
+  - first:
+      213: -5008509213459049041
+    second: ef_back_awa_3
+  - first:
+      213: 8431368049431971190
+    second: ef_back_awa_4
+  - first:
+      213: 1240005241054355449
+    second: ef_back_awa_5
+  - first:
+      213: 3816492073919312301
+    second: ef_back_awa_6
+  - first:
+      213: 6361762453433557
+    second: ef_back_awa_7
+  - first:
+      213: 2113362421216722211
+    second: ef_back_awa_8
+  - first:
+      213: -8337873135247018902
+    second: ef_back_awa_9
+  - first:
+      213: 4534350457393220241
+    second: ef_back_awa_10
+  - first:
+      213: 6319838646912042659
+    second: ef_back_awa_11
+  - first:
+      213: -3984126395305754109
+    second: ef_back_awa_12
+  - first:
+      213: 7139851870206007882
+    second: ef_back_awa_13
+  - first:
+      213: 4689001227404534218
+    second: ef_back_awa_14
+  - first:
+      213: -5594078889281806463
+    second: ef_back_awa_15
+  - first:
+      213: -3820417397327731771
+    second: ef_back_awa_16
+  - first:
+      213: -6294353370871954175
+    second: ef_back_awa_17
+  - first:
+      213: 7994463355650925596
+    second: ef_back_awa_18
+  - first:
+      213: -1398499772474741416
+    second: ef_back_awa_19
+  - first:
+      213: 7305339310922160879
+    second: ef_back_awa_20
+  - first:
+      213: 3019168454106038420
+    second: ef_back_awa_21
+  - first:
+      213: -6149752800751749877
+    second: ef_back_awa_22
+  - first:
+      213: 5494988297006443479
+    second: ef_back_awa_23
+  - first:
+      213: 716085574730321669
+    second: ef_back_awa_24
+  - first:
+      213: -1313816288576965539
+    second: ef_back_awa_25
+  - first:
+      213: 814012166663680419
+    second: ef_back_awa_26
+  - first:
+      213: -485195384908150068
+    second: ef_back_awa_27
+  - first:
+      213: 6077850241605320249
+    second: ef_back_awa_28
+  - first:
+      213: 263765068306392539
+    second: ef_back_awa_29
+  - first:
+      213: -8058980808324949979
+    second: ef_back_awa_30
+  - first:
+      213: 1100689004606833686
+    second: ef_back_awa_31
+  - first:
+      213: 7075520177128789144
+    second: ef_back_awa_32
+  - first:
+      213: 578633158380790783
+    second: ef_back_awa_33
+  - first:
+      213: -5815422184538900788
+    second: ef_back_awa_34
+  - first:
+      213: 542430206807495521
+    second: ef_back_awa_35
+  - first:
+      213: 8178897131429239392
+    second: ef_back_awa_36
+  - first:
+      213: 4480540277861791154
+    second: ef_back_awa_37
+  - first:
+      213: -1995906973360074535
+    second: ef_back_awa_38
+  - first:
+      213: 6805953951852617600
+    second: ef_back_awa_39
+  - first:
+      213: 1434959196308468321
+    second: ef_back_awa_40
+  - first:
+      213: -5567637491463201390
+    second: ef_back_awa_41
+  - first:
+      213: -3499494302809730761
+    second: ef_back_awa_42
+  - first:
+      213: 2307229387421639811
+    second: ef_back_awa_43
+  - first:
+      213: 1086288766106028097
+    second: ef_back_awa_44
+  - first:
+      213: -3873689508114774571
+    second: ef_back_awa_45
+  - first:
+      213: 1358807129948741800
+    second: ef_back_awa_46
+  - first:
+      213: 7997585587463599193
+    second: ef_back_awa_47
+  - first:
+      213: -2236326891084884588
+    second: ef_back_awa_48
+  - first:
+      213: -7197965624095325790
+    second: ef_back_awa_49
+  - first:
+      213: 1261480766478318568
+    second: ef_back_awa_50
+  - first:
+      213: -1401773904740545603
+    second: ef_back_awa_51
+  - first:
+      213: -2942094538306063241
+    second: ef_back_awa_52
+  - first:
+      213: 2132187409012503888
+    second: ef_back_awa_53
+  - first:
+      213: -447607290003920528
+    second: ef_back_awa_54
+  - first:
+      213: 2068152864915631379
+    second: ef_back_awa_55
+  - first:
+      213: -8262076594194514032
+    second: ef_back_awa_56
+  - first:
+      213: -6634711108419467222
+    second: ef_back_awa_57
+  - first:
+      213: -8934602019428407916
+    second: ef_back_awa_58
+  - first:
+      213: -665261254707154273
+    second: ef_back_awa_59
+  - first:
+      213: 4514505596801755522
+    second: ef_back_awa_60
+  - first:
+      213: 6007304936361385876
+    second: ef_back_awa_61
+  - first:
+      213: -590531375292522722
+    second: ef_back_awa_62
+  - first:
+      213: 98969001192334975
+    second: ef_back_awa_63
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ef_back_awa_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208530fb818db69f0800000000000000
+      internalID: -474047734961973246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_1
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 3360
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b420946366ceeb710800000000000000
+      internalID: 1711064832188940875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_2
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 3360
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b62342b6de56b250800000000000000
+      internalID: 5960055433078187699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_3
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 3360
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5908518633e7ab0800000000000000
+      internalID: -5008509213459049041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_4
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 3360
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67588f4d19c320570800000000000000
+      internalID: 8431368049431971190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_5
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 3360
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffdaa86232653110800000000000000
+      internalID: 1240005241054355449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_6
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 3360
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1fd021257e6f430800000000000000
+      internalID: 3816492073919312301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_7
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 3360
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcae2f3df9961000800000000000000
+      internalID: 6361762453433557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d384ecceb245d10800000000000000
+      internalID: 2113362421216722211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_9
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 2880
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6434573f8ce94c80800000000000000
+      internalID: -8337873135247018902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_10
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 2880
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a8d0c87bf3dee30800000000000000
+      internalID: 4534350457393220241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_11
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 2880
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a64af2f3c394b750800000000000000
+      internalID: 6319838646912042659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_12
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 2880
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3020b8bf62a85b8c0800000000000000
+      internalID: -3984126395305754109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_13
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 2880
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a99888279d51360800000000000000
+      internalID: 7139851870206007882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_14
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 2880
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac161ded5cda21140800000000000000
+      internalID: 4689001227404534218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_15
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 2880
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f98de83e6dd52b0800000000000000
+      internalID: -5594078889281806463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3ee8a5e962bfac0800000000000000
+      internalID: -3820417397327731771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_17
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 2400
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105056645f6f5a8a0800000000000000
+      internalID: -6294353370871954175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_18
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 2400
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c146373c01a02fe60800000000000000
+      internalID: 7994463355650925596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_19
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 2400
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dad23ddd7879ce0800000000000000
+      internalID: -1398499772474741416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_20
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 2400
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea563fd567c16560800000000000000
+      internalID: 7305339310922160879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_21
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 2400
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4904e0876bd36e920800000000000000
+      internalID: 3019168454106038420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_22
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 2400
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b057ab61960b7aaa0800000000000000
+      internalID: -6149752800751749877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_23
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 2400
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db6fff0ebe124c40800000000000000
+      internalID: 5494988297006443479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f0596490c00f900800000000000000
+      internalID: 716085574730321669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_25
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1920
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d547f33eb0364cde0800000000000000
+      internalID: -1313816288576965539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_26
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1920
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1b5d4b0c3fb4b00800000000000000
+      internalID: 814012166663680419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_27
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 1920
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca04eb3e5d3449f0800000000000000
+      internalID: -485195384908150068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_28
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 1920
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e38e8c79cd85450800000000000000
+      internalID: 6077850241605320249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_29
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 1920
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd52f80aee419a300800000000000000
+      internalID: 263765068306392539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_30
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 1920
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528d91437afb82090800000000000000
+      internalID: -8058980808324949979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_31
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 1920
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614c4c761de664f00800000000000000
+      internalID: 1100689004606833686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894ded60d1c413260800000000000000
+      internalID: 7075520177128789144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_33
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1440
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3ac84bac7b70800800000000000000
+      internalID: 578633158380790783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_34
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1440
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6f1a7a5587b4fa0800000000000000
+      internalID: -5815422184538900788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_35
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 1440
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163d3303669178700800000000000000
+      internalID: 542430206807495521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_36
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 1440
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a1d4d7b97418170800000000000000
+      internalID: 8178897131429239392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_37
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 1440
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b538cfc4a31e2e30800000000000000
+      internalID: 4480540277861791154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_38
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 1440
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0d528be2d1d44e0800000000000000
+      internalID: -1995906973360074535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_39
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 1440
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f57d94f0b937e50800000000000000
+      internalID: 6805953951852617600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162752b49cff9e310800000000000000
+      internalID: 1434959196308468321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_41
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 960
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d503b3337cbb2b0800000000000000
+      internalID: -5567637491463201390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_42
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 960
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731d583097c4f6fc0800000000000000
+      internalID: -3499494302809730761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_43
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 960
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384eb9457ece40020800000000000000
+      internalID: 2307229387421639811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_44
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 960
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1484f3b90e5431f00800000000000000
+      internalID: 1086288766106028097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_45
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 960
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d549a28ae3ed3ac0800000000000000
+      internalID: -3873689508114774571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_46
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 960
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0ecdaa2e37bd210800000000000000
+      internalID: 1358807129948741800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_47
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 960
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9543d8108b12dfe60800000000000000
+      internalID: 7997585587463599193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4955b378a88f6f0e0800000000000000
+      internalID: -2236326891084884588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_49
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 480
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1435eb660bb1c90800000000000000
+      internalID: -7197965624095325790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_50
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 480
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb7de0d21ea18110800000000000000
+      internalID: 1261480766478318568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_51
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 480
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb07808f06eb8ce0800000000000000
+      internalID: -1401773904740545603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_52
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 480
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77476a4fa949b27d0800000000000000
+      internalID: -2942094538306063241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_53
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 480
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05530c4d62d079d10800000000000000
+      internalID: 2132187409012503888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_54
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 480
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079e0709a87c9c9f0800000000000000
+      internalID: -447607290003920528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_55
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 480
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31da086b21e83bc10800000000000000
+      internalID: 2068152864915631379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f77f7ac15375d80800000000000000
+      internalID: -8262076594194514032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_57
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 0
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28c15b2665cce3a0800000000000000
+      internalID: -6634711108419467222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_58
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 0
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4956b760dcae10480800000000000000
+      internalID: -8934602019428407916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_59
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 0
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92795ed96484c6f0800000000000000
+      internalID: -665261254707154273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_60
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 0
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289a1e1ebeeb6ae30800000000000000
+      internalID: 4514505596801755522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_61
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 0
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f5545f20c3e5350800000000000000
+      internalID: 6007304936361385876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_62
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 0
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f57fac7d20ec7f0800000000000000
+      internalID: -590531375292522722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ef_back_awa_63
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 0
+        width: 853
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7628df38cb9f5100800000000000000
+      internalID: 98969001192334975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

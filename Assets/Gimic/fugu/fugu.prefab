@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveEffect: {fileID: 8607795416108399769}
+  HitEffectAdjustX: 0
+  HitEffectAdjustY: 0
 --- !u!1 &8911465241951476548
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +242,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 4.229098
       objectReference: {fileID: 0}
+    - target: {fileID: 4180289923205123661, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: c822f474a4b17ac43a7e61825c13ecd4, type: 2}
     - target: {fileID: 4180289923205123661, guid: d0c5d5cdac095f745be0b174f294d9f7, type: 3}
       propertyPath: m_Offset.y
       value: 0.1415543
