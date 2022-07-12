@@ -25,11 +25,14 @@ public class player : MonoBehaviour
 
     InputAction rotateR, rotateL,Triger;
 
-    public bool useMouse;
-
     public float power =0;
 
+    public bool isCharge;
+
     Rigidbody2D Rigidbody2D;
+
+    bool rotateRight = false;
+    bool rotateLeft = false;
 
     private void Awake()
     {
@@ -59,43 +62,16 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-/*#if UNITY_EDITOR
-
-        // エフェクトお試し生成
-        if (Keyboard.current.digit3Key.wasReleasedThisFrame)
-        {
-            chargeEF[0].SetActive(true);
-        }
-
-        if (Keyboard.current.digit4Key.wasReleasedThisFrame)
-        {
-            chargeEF[1].SetActive(true);
-        }
-
-        if (Keyboard.current.digit5Key.wasReleasedThisFrame)
-        {
-            chargeEF[2].SetActive(true);
-        }
-
-        if (Keyboard.current.digit6Key.wasReleasedThisFrame)
-        {
-            chargeEF[3].SetActive(true);
-        }
-        if (Keyboard.current.digit7Key.wasReleasedThisFrame)
-        {
-            chargeEF[4].SetActive(true);
-        }
-
-        if (Keyboard.current.rKey.wasReleasedThisFrame)
-        {
-            bubbleRecoveryEF.GetComponent<EffectPrefab>().SetEffectRotation();
-            bubbleRecoveryEF.GetComponent<EffectPrefab>().EffectON();
-        }
-        
-#endif */
-
-
         if (rotateR.ReadValue<float>() > 0)
+        {
+            rotateRight = true;
+        }
+        else if (rotateL.ReadValue<float>() > 0)
+        {
+            rotateLeft = true;
+        }
+
+        if (rotateRight)
         {
             transform.RotateAroundLocal(Vector3.back, rotateSpeed);
 
@@ -104,7 +80,7 @@ public class player : MonoBehaviour
             moveEF[1].SetActive(false);
 
             Debug.Log("input rotateR");
-        }else if (rotateL.ReadValue<float>() > 0)
+        }else if (rotateLeft)
         {
             transform.RotateAroundLocal(Vector3.back, -rotateSpeed);
 
@@ -120,76 +96,74 @@ public class player : MonoBehaviour
             }
         }
 
-        if (useMouse)
+        rotateRight = false;
+        rotateLeft  = false;
+
+
+        if (isCharge)
         {
-            var mouse = Mouse.current;
-            Vector2 MousePos = mouse.position.ReadValue();
-            MousePos.x -= Screen.width / 2;
-            MousePos.y -= Screen.height / 2;
-            //Debug.Log(MousePos);
-
-            transform.rotation = Quaternion.FromToRotation(Vector3.up, MousePos);
-
-            if (mouse.leftButton.isPressed)
+            kurage_anim.SetBool("Shot", true);
+            if (power >= 0.2)
             {
-                kurage_anim.SetBool("Shot", true);
-                power += addPowerMouse;
-            }
-
-            if (mouse.leftButton.wasReleasedThisFrame)
-            {
-                Inpact();
-                power = 0.0f;
-            }
-        }
-        else
-        {
-            if (Triger.ReadValue<float>() <= 0)
-            {
-                if (power < 0.2) return;
-                chargeEF[(int)(power * 5) - 1].SetActive(false);
-                Inpact();
-                power = 0.0f;
-            }
-
-            if (power < Triger.ReadValue<float>())
-            {
-                if (Triger.ReadValue<float>() < 0.2) return;
-                kurage_anim.SetBool("Shot", true);
-                if (power >= 0.2)
+                if ((int)(power * 5) != (int)((power + addPowerMouse) * 10 / 2))
                 {
-                    if ((int)(power * 5) != (int)(Triger.ReadValue<float>() * 10 / 2))
-                    {
-                        chargeEF[(int)(power * 5) - 1].SetActive(false);
+                    chargeEF[(int)(power * 5) - 1].SetActive(false);
 
-                    }
                 }
-                power = Triger.ReadValue<float>();
-                power = ((int)(power * 10 / 2)) * 0.2f;
-                chargeEF[(int)(power * 5) - 1].SetActive(true);
-                Debug.Log(power);
             }
+
+            power += addPowerMouse;
+
+            chargeEF[(int)(power * 5) - 1].SetActive(true);
+
+            if (power > 1.0f) power = 1.0f;
         }
-       
+      
+
+        if (Triger.ReadValue<float>() <= 0)
+        {
+            if (isCharge)
+            {
+                return;
+            }
+            if (power < 0.2) return;
+           
+            Inpact();
+            power = 0.0f;
+
+        }
+
+        if (power < Triger.ReadValue<float>())
+        {
+            if (Triger.ReadValue<float>() < 0.2) return;
+            kurage_anim.SetBool("Shot", true);
+            if (power >= 0.2)
+            {
+                if ((int)(power * 5) != (int)(Triger.ReadValue<float>() * 10 / 2))
+                {
+                    chargeEF[(int)(power * 5) - 1].SetActive(false);
+
+                }
+            }
+            power = Triger.ReadValue<float>();
+            power = ((int)(power * 10 / 2)) * 0.2f;
+            chargeEF[(int)(power * 5) - 1].SetActive(true);
+            Debug.Log(power);
+        }       
     }
 
-    void Inpact()
+    public void Inpact()
     {
         if (power < 0.2) return;
+
+        chargeEF[(int)(power * 5) - 1].SetActive(false);
 
         Vector2 force = new Vector2(Mathf.Cos(transform.localEulerAngles.z * 3.14f / 180.0f), Mathf.Sin(transform.localEulerAngles.z * 3.14f / 180.0f));
         Rigidbody2D.AddForce(force * power * impactPower, ForceMode2D.Impulse);
 
         kurage_anim.SetBool("Shot",false);
 
-        if(useMouse)
-        {
-            hitEF[0].GetComponent<EffectPrefab>().EffectON();
-        }
-        else
-        {
-            hitEF[(int)((power * 5) - 1)].GetComponent<EffectPrefab>().EffectON();
-        }
+        hitEF[(int)((power * 5) - 1)].GetComponent<EffectPrefab>().EffectON();       
         
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
 
@@ -249,18 +223,11 @@ public class player : MonoBehaviour
 
     public void RotateRight()
     {
-        transform.RotateAroundLocal(Vector3.back, rotateSpeed);
-
-        moveEF[0].SetActive(true);
-
-        moveEF[1].SetActive(false);
+        rotateRight = true;
     }
 
     public void RotateLeft()
     {
-        transform.RotateAroundLocal(Vector3.back, -rotateSpeed);
-
-        moveEF[1].SetActive(true);
-        moveEF[0].SetActive(false);
+        rotateLeft = true;
     }
 }
