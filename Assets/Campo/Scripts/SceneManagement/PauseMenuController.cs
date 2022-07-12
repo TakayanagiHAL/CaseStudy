@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PauseMenuController : MonoBehaviour
 {
     public GameManagement gameManager;
+
 
     private void Awake()
     {
         // Subscribe to the gamestate manager
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+
     }
 
     private void OnDestroy()

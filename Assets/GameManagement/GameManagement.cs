@@ -15,8 +15,7 @@ public class GameManagement : MonoBehaviour
     public Timer timer;
     public lifeUI life;
 
-    PlayerInput input;
-    InputAction pose;
+
 
     EventSystem eventSystem;
 
@@ -26,11 +25,7 @@ public class GameManagement : MonoBehaviour
     void Start()
     {
         eventSystem = FindObjectOfType<EventSystem>();
-        input = FindObjectOfType<PlayerInput>();
 
-        var actionMap = input.currentActionMap;
-
-        pose = actionMap["Pose"];
     }
 
     // Update is called once per frame
@@ -53,21 +48,6 @@ public class GameManagement : MonoBehaviour
                 }
             
         }
-        if(pose.ReadValue<float>() > 0)
-        {
-            if (!isIn)
-            {
-                bools[3] = !bools[3];
-            }
-        }
-        
-        if (pose.ReadValue<float>() > 0)
-        {
-            isIn = true;
-        }
-        else
-        {
-            isIn = false;
-        }
+    
     }
 }

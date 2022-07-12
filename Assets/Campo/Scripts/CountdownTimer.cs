@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -15,8 +16,11 @@ public class CountdownTimer : MonoBehaviour
 
     {
         image = GetComponent<Image>();
+        Debug.Log(GameStateManager.Instance.CurrentGameState);
         GameStateManager.Instance.SetState(GAME_STATE.GAMESTART);
+        Debug.Log(GameStateManager.Instance.CurrentGameState);
         SoundManager.instance.PlaySE("カウントダウン");
+        
     }
 
     // Update is called once per frame

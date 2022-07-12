@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7017951408463923923}
   - component: {fileID: 5918819061501687995}
   - component: {fileID: 3601885068654324089}
+  - component: {fileID: -1090092158568716117}
   m_Layer: 0
   m_Name: ef_jely_hit_B
   m_TagString: Untagged
@@ -104,6 +105,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &3601885068654324089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054611147688824599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db04dc8bcb8902244b0fcf5fd98d10d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1090092158568716117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
