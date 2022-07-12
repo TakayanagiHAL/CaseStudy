@@ -49,5 +49,6 @@ public class PlayerGet : MonoBehaviour
         player.power = ((int)(player.power * 10 / 2)) * 0.2f;
         player.Inpact();
         player.power = 0.0f;
+        Debug.Log("Inpalsed poser " + player.power);
     }
 }

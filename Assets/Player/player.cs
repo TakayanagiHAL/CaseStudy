@@ -156,6 +156,8 @@ public class player : MonoBehaviour
     {
         if (power < 0.2) return;
 
+        power = ((int)(power * 10 / 2)) * 0.2f;
+
         chargeEF[(int)(power * 5) - 1].SetActive(false);
 
         Vector2 force = new Vector2(Mathf.Cos(transform.localEulerAngles.z * 3.14f / 180.0f), Mathf.Sin(transform.localEulerAngles.z * 3.14f / 180.0f));
@@ -166,6 +168,8 @@ public class player : MonoBehaviour
         hitEF[(int)((power * 5) - 1)].GetComponent<EffectPrefab>().EffectON();       
         
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
+
+        power = 0.0f;
 
         SoundManager.instance.PlaySE("ƒNƒ‰ƒQƒqƒbƒg");
 
