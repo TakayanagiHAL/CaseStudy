@@ -55,7 +55,7 @@ MonoBehaviour:
   startRadian: 0
   rotateSpeed: 0.01
   impactPower: 10
-  addPowerMouse: 0.01
+  addPowerMouse: 0.001
   lifeUI: {fileID: 0}
   kurage_anim: {fileID: 6433393744595873787}
   chargeEF:
@@ -74,8 +74,8 @@ MonoBehaviour:
   - {fileID: 4832608667514593061}
   - {fileID: 6195369414811446745}
   bubbleRecoveryEF: {fileID: 6330791873912994932}
-  useMouse: 0
   power: 0
+  isCharge: 0
 --- !u!114 &8559066654070831023
 MonoBehaviour:
   m_ObjectHideFlags: 0

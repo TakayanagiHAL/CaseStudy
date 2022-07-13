@@ -287,6 +287,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381239765391745899, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
+      propertyPath: followPrefab
+      value: 
+      objectReference: {fileID: 4650304297683337776, guid: 2c2ff4535ca3d794d9caf7455876b26b, type: 3}
     - target: {fileID: 1254062453443749639, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -353,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8199442434995674779, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
       propertyPath: addPowerMouse
-      value: 0.01
+      value: 0.0017
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60bb337f4b9db91409ed3738ee613f9b, type: 3}
