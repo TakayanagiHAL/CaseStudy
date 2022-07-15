@@ -26,12 +26,21 @@ public class PauseController : MonoBehaviour
 
             pause = actionMap["Pause"];
         }
-        if (pause.triggered && GameStateManager.Instance.CurrentGameState != GAME_STATE.GAMEEND)
+
+        if (pause.triggered)
+        {
+            PoseSwitch();
+        }
+    }
+
+    public void PoseSwitch()
+    {
+        if (GameStateManager.Instance.CurrentGameState != GAME_STATE.GAMEEND)
         {
 
             GAME_STATE currentGameState = GameStateManager.Instance.CurrentGameState;
             GAME_STATE newGameState = currentGameState == GAME_STATE.GAMEPLAY
-                ? GAME_STATE.PAUSE 
+                ? GAME_STATE.PAUSE
                 : GAME_STATE.GAMEPLAY;
 
             GameStateManager.Instance.SetState(newGameState);
