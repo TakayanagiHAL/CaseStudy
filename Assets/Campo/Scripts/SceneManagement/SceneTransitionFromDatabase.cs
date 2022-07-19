@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 
 public class SceneTransitionFromDatabase : MonoBehaviour
@@ -13,8 +14,20 @@ public class SceneTransitionFromDatabase : MonoBehaviour
 
     public void FadeToStage()
     {
-        SoundManager.instance.PlaySE("クリック");
-        StartCoroutine(FadeTo());
+        if (SystemInfo.deviceType != DeviceType.Handheld)
+        {
+            SoundManager.instance.PlaySE("クリック");
+            StartCoroutine(FadeTo());
+        }
+    }
+
+    public void FadeToStageMobile()
+    {
+        if (SystemInfo.deviceType == DeviceType.Handheld)
+        {
+            SoundManager.instance.PlaySE("クリック");
+            StartCoroutine(FadeTo());
+        }
     }
 
     public void Restart()

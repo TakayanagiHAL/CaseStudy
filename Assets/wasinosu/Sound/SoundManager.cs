@@ -30,8 +30,8 @@ public class SoundManager : MonoBehaviour
     private SE_Data[] SE_Datas;
 
     //ボリューム関連------------------------
-    public float BGM_Volume = 0.1f;
-    public float SE_Volume = 0.1f;
+    public float BGM_Volume;
+    public float SE_Volume;
     public bool Mute = false;
 
     //Audio Souce---------------------------
