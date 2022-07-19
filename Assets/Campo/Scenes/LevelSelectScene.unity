@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 126375095}
   - component: {fileID: 126375094}
   - component: {fileID: 126375093}
+  - component: {fileID: 126375100}
   m_Layer: 5
   m_Name: Level2-1Button
   m_TagString: Untagged
@@ -334,6 +335,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 126375100}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &126375097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,6 +413,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &126375100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126375091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &210147759
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +625,7 @@ GameObject:
   - component: {fileID: 321105560}
   - component: {fileID: 321105559}
   - component: {fileID: 321105558}
+  - component: {fileID: 321105565}
   m_Layer: 5
   m_Name: Level2-3Button
   m_TagString: Untagged
@@ -729,6 +755,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 321105565}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &321105562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,6 +833,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &321105565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321105556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &585287609
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +861,7 @@ GameObject:
   - component: {fileID: 585287613}
   - component: {fileID: 585287612}
   - component: {fileID: 585287611}
+  - component: {fileID: 585287618}
   m_Layer: 5
   m_Name: Level2-4Button
   m_TagString: Untagged
@@ -940,6 +991,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 585287618}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &585287615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +1069,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &585287618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585287609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &996589460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1098,7 @@ GameObject:
   - component: {fileID: 996589465}
   - component: {fileID: 996589466}
   - component: {fileID: 996589468}
+  - component: {fileID: 996589470}
   m_Layer: 5
   m_Name: Level1-1Button
   m_TagString: Untagged
@@ -1096,6 +1172,18 @@ MonoBehaviour:
       - m_Target: {fileID: 996589467}
         m_TargetAssemblyTypeName: SceneTransitionFromDatabase, Assembly-CSharp
         m_MethodName: FadeToStage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 996589470}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1247,6 +1335,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &996589470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996589460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1018913082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1363,7 @@ GameObject:
   - component: {fileID: 1018913086}
   - component: {fileID: 1018913085}
   - component: {fileID: 1018913084}
+  - component: {fileID: 1018913091}
   m_Layer: 5
   m_Name: Level2-5Button
   m_TagString: Untagged
@@ -1392,6 +1493,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1018913091}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1018913088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,6 +1571,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1018913091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018913082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1031966675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,6 +1599,7 @@ GameObject:
   - component: {fileID: 1031966682}
   - component: {fileID: 1031966680}
   - component: {fileID: 1031966681}
+  - component: {fileID: 1031966684}
   m_Layer: 5
   m_Name: Level1-5Button
   m_TagString: Untagged
@@ -1547,6 +1673,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1031966682}
         m_TargetAssemblyTypeName: SceneTransitionFromDatabase, Assembly-CSharp
         m_MethodName: FadeToStage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1031966684}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1669,6 +1807,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1031966684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031966675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1039887191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +1835,7 @@ GameObject:
   - component: {fileID: 1039887198}
   - component: {fileID: 1039887196}
   - component: {fileID: 1039887197}
+  - component: {fileID: 1039887200}
   m_Layer: 5
   m_Name: Level1-2Button
   m_TagString: Untagged
@@ -1758,6 +1909,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1039887198}
         m_TargetAssemblyTypeName: SceneTransitionFromDatabase, Assembly-CSharp
         m_MethodName: FadeToStage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1039887200}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1880,6 +2043,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1039887200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039887191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1075305447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,6 +2071,7 @@ GameObject:
   - component: {fileID: 1075305451}
   - component: {fileID: 1075305450}
   - component: {fileID: 1075305449}
+  - component: {fileID: 1075305456}
   m_Layer: 5
   m_Name: Level2-2Button
   m_TagString: Untagged
@@ -2025,6 +2201,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1075305456}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1075305453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2091,6 +2279,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1075305456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075305447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1137739459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,6 +2382,7 @@ GameObject:
   - component: {fileID: 1233389007}
   - component: {fileID: 1233389005}
   - component: {fileID: 1233389006}
+  - component: {fileID: 1233389009}
   m_Layer: 5
   m_Name: Level1-4Button
   m_TagString: Untagged
@@ -2255,6 +2456,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1233389007}
         m_TargetAssemblyTypeName: SceneTransitionFromDatabase, Assembly-CSharp
         m_MethodName: FadeToStage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1233389009}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2377,6 +2590,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1233389009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233389000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1278959066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,6 +2766,7 @@ GameObject:
   - component: {fileID: 1671583816}
   - component: {fileID: 1671583814}
   - component: {fileID: 1671583815}
+  - component: {fileID: 1671583818}
   m_Layer: 5
   m_Name: Level1-3Button
   m_TagString: Untagged
@@ -2614,6 +2840,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1671583816}
         m_TargetAssemblyTypeName: SceneTransitionFromDatabase, Assembly-CSharp
         m_MethodName: FadeToStage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1671583818}
+        m_TargetAssemblyTypeName: TransSE, Assembly-CSharp
+        m_MethodName: PlaySE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2736,6 +2974,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1671583818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671583809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf7e873533ca24c9e941ce8b034fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1715212401
 PrefabInstance:
   m_ObjectHideFlags: 0
