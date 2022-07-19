@@ -69,6 +69,8 @@ MonoBehaviour:
     SE_Clip: {fileID: 8300000, guid: 97d5438e58f95c44fbc2de51b8430ad7, type: 3}
   - SE_Name: "\u6D77\u6D41"
     SE_Clip: {fileID: 8300000, guid: 67cda172d52a1bf4298d200bf7b7ec20, type: 3}
+  - SE_Name: "\u9077\u79FB"
+    SE_Clip: {fileID: 8300000, guid: 47480866d153c6f42ad4ccb7c12fadf1, type: 3}
   BGM_Volume: 1
   SE_Volume: 1
   Mute: 0
