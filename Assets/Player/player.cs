@@ -113,12 +113,25 @@ public class player : MonoBehaviour
             }
 
             power += addPowerMouse;
-
-            chargeEF[(int)(power * 5) - 1].SetActive(true);
+            
+            if ((int)(power * 5) - 1 < 0)
+            {
+                chargeEF[0].SetActive(true);
+            }
+            else
+            {
+                chargeEF[(int)(power * 5) - 1].SetActive(true);
+            }
 
             if (power > 1.0f) power = 1.0f;
         }
-      
+        else
+        {
+            kurage_anim.SetBool("Shot", false);
+            chargeEF[0].SetActive(false);
+        }
+
+
 
         if (Triger.ReadValue<float>() <= 0)
         {
