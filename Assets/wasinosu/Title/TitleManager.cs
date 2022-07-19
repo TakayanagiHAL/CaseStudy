@@ -22,7 +22,7 @@ public class TitleManager : MonoBehaviour
         if(AnyKeyAction.triggered)
         {
             //Any Key Pressed
-
+            SoundManager.instance.PlaySE("遷移");
             SceneTransitionFromDatabase sceneTransition = GetComponent<SceneTransitionFromDatabase>();
             sceneTransition.FadeToStage();
         }
