@@ -113,12 +113,25 @@ public class player : MonoBehaviour
             }
 
             power += addPowerMouse;
-
-            chargeEF[(int)(power * 5) - 1].SetActive(true);
+            
+            if ((int)(power * 5) - 1 < 0)
+            {
+                chargeEF[0].SetActive(true);
+            }
+            else
+            {
+                chargeEF[(int)(power * 5) - 1].SetActive(true);
+            }
 
             if (power > 1.0f) power = 1.0f;
         }
-      
+        else
+        {
+            kurage_anim.SetBool("Shot", false);
+            chargeEF[0].SetActive(false);
+        }
+
+
 
         if (Triger.ReadValue<float>() <= 0)
         {
@@ -156,6 +169,8 @@ public class player : MonoBehaviour
     {
         if (power < 0.2) return;
 
+        power = ((int)(power * 10 / 2)) * 0.2f;
+
         chargeEF[(int)(power * 5) - 1].SetActive(false);
 
         Vector2 force = new Vector2(Mathf.Cos(transform.localEulerAngles.z * 3.14f / 180.0f), Mathf.Sin(transform.localEulerAngles.z * 3.14f / 180.0f));
@@ -166,6 +181,8 @@ public class player : MonoBehaviour
         hitEF[(int)((power * 5) - 1)].GetComponent<EffectPrefab>().EffectON();       
         
         this.gameObject.transform.GetChild(2).gameObject.GetComponent<Bubble>().SetBubbleAnimatorHitTrigger();
+
+        power = 0.0f;
 
         SoundManager.instance.PlaySE("ƒNƒ‰ƒQƒqƒbƒg");
 
